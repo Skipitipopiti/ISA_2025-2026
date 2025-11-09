@@ -1,0 +1,63 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	
+Date:		Sun Nov  2 16:41:12 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_design_netlisttype verilog
+<CMD> set init_design_settop 1
+<CMD> set init_top_cell filter_core
+<CMD> set init_verilog ../netlist/filter_core_pipe_10Tadd_half_fmax_ckg.v
+<CMD> set init_lef_file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef
+<CMD> set init_gnd_net VSS
+<CMD> set init_pwr_net VDD
+<CMD> set init_mmmc_file mmm_design.tcl
+<CMD> init_design
+#% Begin Load MMMC data ... (date=11/02 16:47:42, mem=579.3M)
+#% End Load MMMC data ... (date=11/02 16:47:42, total cpu=0:00:00.1, real=0:00:00.0, peak res=579.5M, current mem=579.5M)
+my_rc
+
+Loading LEF file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Sun Nov  2 16:47:42 2025
+viaInitial ends at Sun Nov  2 16:47:42 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from mmm_design.tcl
+Reading MY_LIBSET timing library '/eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm.lib' ...
+Read 134 cells in library 'NangateOpenCellLibrary' 
+*** End library_loading (cpu=0.05min, real=0.05min, mem=14.0M, fe_cpu=1.39min, fe_real=6.55min, fe_mem=796.5M) ***
+#% Begin Load netlist data ... (date=11/02 16:47:45, mem=593.2M)
+*** Begin netlist parsing (mem=796.5M) ***
+Created 134 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../netlist/filter_core_pipe_10Tadd_half_fmax_ckg.v'
+
+*** Memory Usage v#2 (Current mem = 796.520M, initial mem = 272.285M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=796.5M) ***
+#% End Load netlist data ... (date=11/02 16:47:45, total cpu=0:00:00.1, real=0:00:00.0, peak res=598.8M, current mem=598.8M)
+**ERROR: (IMPSYC-300):	Cell filter_core not found.
+**ERROR: (IMPVL-904):	Can't set top cell to "filter_core" because it does not exist.  Exiting!
+
+*** Memory Usage v#2 (Current mem = 797.527M, initial mem = 272.285M) ***
+*** Message Summary: 0 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:25, real=0:06:42, mem=797.5M) ---

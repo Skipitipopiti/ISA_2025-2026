@@ -1,0 +1,354 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	
+Date:		Mon Nov  3 11:07:22 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+my_rc
+Loading view definition file from /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_half_fmax_ckg.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.04min, real=0.03min, mem=15.0M, fe_cpu=0.73min, fe_real=2.38min, fe_mem=803.9M) ***
+*** Netlist is unique.
+Loading preference file /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_half_fmax_ckg.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+Loading place ...
+'set_default_switching_activity' finished successfully.
+my_delay
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+my_rc
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQuantus extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQuantus' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQuantus extraction to take place.
+Extraction called for design 'filter_core' of instances=6322 and nets=2969 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design filter_core.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: my_rc
+extractDetailRC Option : -outfile /tmp/innovus_temp_15003_isaserver_isa31_2025_2026_LfCmZG/filter_core_15003_PtKtE1.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1164.8M)
+Extracted 10.0077% (CPU Time= 0:00:00.4  MEM= 1250.8M)
+Extracted 20.0064% (CPU Time= 0:00:00.4  MEM= 1251.8M)
+Extracted 30.005% (CPU Time= 0:00:00.4  MEM= 1251.8M)
+Extracted 40.0082% (CPU Time= 0:00:00.5  MEM= 1252.8M)
+Extracted 50.0068% (CPU Time= 0:00:00.5  MEM= 1252.8M)
+Extracted 60.0055% (CPU Time= 0:00:00.6  MEM= 1253.8M)
+Extracted 70.0086% (CPU Time= 0:00:00.6  MEM= 1253.8M)
+Extracted 80.0073% (CPU Time= 0:00:00.6  MEM= 1254.8M)
+Extracted 90.0059% (CPU Time= 0:00:00.7  MEM= 1254.8M)
+Extracted 100% (CPU Time= 0:00:00.9  MEM= 1254.8M)
+Number of Extracted Resistors     : 36923
+Number of Extracted Ground Cap.   : 39708
+Number of Extracted Coupling Cap. : 85988
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+ Corner: my_rc
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1238.8M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:03.3  Real Time: 0:00:05.0  MEM: 1238.816M)
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+** INFO:  (VOLTUS_POWR-3229): Using user defined default frequency 100MHz for power calculation.
+
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> read_activity_file -format VCD -scope /tb_fir/UUT -start {} -end {} -block {} ../vcd/filter_core_half_fmax_ckg_syn_innovus.vcd
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+           1.1V	    VDD
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: filter_core
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+             0V	    VSS
+           1.1V	    VDD
+MY_CLK(229.358MHz) Parsing VCD file ../vcd/filter_core_half_fmax_ckg_syn_innovus.vcd
+
+Starting Reading VCD variables
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT)
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT): 10%
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT): 20%
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT): 30%
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT): 40%
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT): 50%
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT): 60%
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT): 70%
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT): 80%
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT): 90%
+
+Finished Reading VCD variables
+2025-Nov-03 11:13:26 (2025-Nov-03 10:13:26 GMT)
+   
+The vcd command required:
+   		0.31 user, 0.01 system, and 0.37 real seconds
+
+   Total number of value changes: 386763.
+
+   Total simulation time: 1.7706e-06s.
+
+   With this vcd command,  383832 value changes and 1.7706e-06 second
+simulation time were counted for power consumption calculation.
+
+  Filename (activity)                    :
+../vcd/filter_core_half_fmax_ckg_syn_innovus.vcd
+  Names in file that matched to design   : 2931/2931
+  Annotation coverage for this file
+   (Unique nets matched/Total nets)       : 2931/2931 = 100%
+
+
+  Total annotation coverage for all files of type VCD: 2931/2931 = 100%
+  Percent of VCD annotated nets with zero toggles: 198/2931 = 6.75537%
+
+'read_activity_file' finished successfully.
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//filter_core.rpt
+Using Power View: MyAnView.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: filter_core
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1238.82)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Total number of fetched objects 3072
+AAE_INFO-618: Total number of nets in the design is 2969,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1253.03 CPU=0:00:03.2 REAL=0:00:03.0)
+End delay calculation (fullDC). (MEM=1225.95 CPU=0:00:03.9 REAL=0:00:04.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1225.9M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 1225.9M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1161.07)
+Glitch Analysis: View MyAnView -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View MyAnView -- Total Number of Nets Analyzed = 3072. 
+Total number of fetched objects 3072
+AAE_INFO-618: Total number of nets in the design is 2969,  0.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1204.23 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1204.23 CPU=0:00:00.1 REAL=0:00:00.0)
+
+Begin Power Analysis
+
+             0V	    VSS
+           1.1V	    VDD
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=915.67MB/2335.79MB/949.58MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=915.68MB/2335.79MB/949.58MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=915.76MB/2335.79MB/949.58MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT)
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT): 10%
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT): 20%
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT): 30%
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT): 40%
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT): 50%
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT): 60%
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT): 70%
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT): 80%
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT): 90%
+
+Finished Levelizing
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT)
+
+Starting Activity Propagation
+2025-Nov-03 11:13:32 (2025-Nov-03 10:13:32 GMT)
+
+Finished Activity Propagation
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT)
+
+Activity annotation summary:
+        Primary Inputs : 210/210 = 100%
+          Flop outputs : 234/234 = 100%
+  Memory/Macro outputs : 0/0 = 0%
+      Tristate outputs : 0/0 = 0%
+            Total Nets : 2931/2931 = 100%
+
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=915.98MB/2335.79MB/949.58MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT)
+ ... Calculating switching power
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT): 10%
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT): 20%
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT): 30%
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT): 40%
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT): 50%
+ ... Calculating internal and leakage power
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT): 60%
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT): 70%
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT): 80%
+2025-Nov-03 11:13:33 (2025-Nov-03 10:13:33 GMT): 90%
+
+Finished Calculating power
+2025-Nov-03 11:13:34 (2025-Nov-03 10:13:34 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=916.44MB/2335.79MB/949.58MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=916.44MB/2335.79MB/949.58MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:01, mem(process/total/peak)=916.51MB/2335.79MB/949.58MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=916.52MB/2335.79MB/949.58MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.96910096 	   56.1562%
+Total Switching Power:       0.65810855 	   38.1352%
+Total Leakage Power:         0.09851592 	    5.7087%
+Total Power:                 1.72572544
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=918.13MB/2335.79MB/949.58MB)
+
+Begin Creating Binary Database
+Ended Creating Binary Database: (cpu=0:00:01, real=0:00:01,
+mem(process/total/peak)=1433.07MB/3104.21MB/1433.08MB)
+
+Output file is .//filter_core.rpt.
+<CMD> report_power -outfile reports/power_half_fmax_ckg_innovus_1.txt -sort { total }
+Using Power View: MyAnView.
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=923.22MB/2310.21MB/1450.25MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.96910096 	   56.1562%
+Total Switching Power:       0.65810855 	   38.1352%
+Total Leakage Power:         0.09851592 	    5.7087%
+Total Power:                 1.72572544
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=923.83MB/2310.21MB/1450.25MB)
+
+
+Output file is reports/power_half_fmax_ckg_innovus_1.txt.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+
+
+ERROR: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+
+
+**ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 31)
+
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+
+
+ERROR: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+
+
+**ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 31)
+
+**ERROR: (IMPSYT-6300):	Failed to execute command 'source'. For more details, refer to error message: **ERROR: (IMPIMEX-7031):	restoreDesign more than once in the same Innovus session is dangerous and not recommended. Some internal state of applications or global settings cannot be reset, so it's not reliable enough in real flow. If you are just experimenting and/or debugging and accept the risks, you can set the global restore_db_stop_at_design_in_memory to 0 and try again.
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Nov  3 11:18:16 2025
+  Total CPU time:     0:01:52
+  Total real time:    0:10:56
+  Peak memory (main): 1450.25MB
+
+
+*** Memory Usage v#2 (Current mem = 1187.250M, initial mem = 272.289M) ***
+*** Message Summary: 4 warning(s), 6 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:49, real=0:10:54, mem=1187.2M) ---

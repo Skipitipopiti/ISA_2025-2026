@@ -1,0 +1,81 @@
+[11/02 16:41:12      0s] 
+[11/02 16:41:12      0s] Cadence Innovus(TM) Implementation System.
+[11/02 16:41:12      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/02 16:41:12      0s] 
+[11/02 16:41:12      0s] Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+[11/02 16:41:12      0s] Options:	
+[11/02 16:41:12      0s] Date:		Sun Nov  2 16:41:12 2025
+[11/02 16:41:12      0s] Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+[11/02 16:41:12      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[11/02 16:41:12      0s] 
+[11/02 16:41:12      0s] License:
+[11/02 16:41:12      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[11/02 16:41:12      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/02 16:42:17     34s] @(#)CDS: Innovus v20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/02 16:42:17     34s] @(#)CDS: NanoRoute 20.11-s130_1 NR200802-2257/20_11-UB (database version 18.20.512) {superthreading v2.9}
+[11/02 16:42:17     34s] @(#)CDS: AAE 20.11-s008 (64bit) 08/05/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/02 16:42:17     34s] @(#)CDS: CTE 20.11-s059_1 () Aug  2 2020 05:46:30 ( )
+[11/02 16:42:17     34s] @(#)CDS: SYNTECH 20.11-s028_1 () Aug  1 2020 06:14:27 ( )
+[11/02 16:42:17     34s] @(#)CDS: CPE v20.11-s013
+[11/02 16:42:17     34s] @(#)CDS: IQuantus/TQuantus 19.1.3-s260 (64bit) Thu May 28 10:57:28 PDT 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/02 16:42:17     34s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[11/02 16:42:17     34s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[11/02 16:42:17     34s] @(#)CDS: RCDB 11.15.0
+[11/02 16:42:17     34s] @(#)CDS: STYLUS 20.10-p011_1 (06/03/2020 04:47 PDT)
+[11/02 16:42:17     34s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_5111_isaserver_isa31_2025_2026_wyCQrd.
+
+[11/02 16:42:17     34s] Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+[11/02 16:42:23     36s] 
+[11/02 16:42:23     36s] **INFO:  MMMC transition support version v31-84 
+[11/02 16:42:23     36s] 
+[11/02 16:42:23     36s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/02 16:42:23     36s] <CMD> suppressMessage ENCEXT-2799
+[11/02 16:42:23     36s] <CMD> win
+[11/02 16:46:09     62s] <CMD> set init_design_netlisttype verilog
+[11/02 16:46:09     62s] <CMD> set init_design_settop 1
+[11/02 16:46:09     62s] <CMD> set init_top_cell filter_core
+[11/02 16:46:09     62s] <CMD> set init_verilog ../netlist/filter_core_pipe_10Tadd_half_fmax_ckg.v
+[11/02 16:46:09     62s] <CMD> set init_lef_file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[11/02 16:46:09     62s] <CMD> set init_gnd_net VSS
+[11/02 16:46:09     62s] <CMD> set init_pwr_net VDD
+[11/02 16:47:42     80s] <CMD> set init_mmmc_file mmm_design.tcl
+[11/02 16:47:42     80s] <CMD> init_design
+[11/02 16:47:42     80s] #% Begin Load MMMC data ... (date=11/02 16:47:42, mem=579.3M)
+[11/02 16:47:42     80s] #% End Load MMMC data ... (date=11/02 16:47:42, total cpu=0:00:00.1, real=0:00:00.0, peak res=579.5M, current mem=579.5M)
+[11/02 16:47:42     80s] 
+[11/02 16:47:42     80s] Loading LEF file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+[11/02 16:47:42     80s] Set DBUPerIGU to M2 pitch 380.
+[11/02 16:47:42     80s] 
+[11/02 16:47:42     80s] viaInitial starts at Sun Nov  2 16:47:42 2025
+viaInitial ends at Sun Nov  2 16:47:42 2025
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[11/02 16:47:42     80s] Loading view definition file from mmm_design.tcl
+[11/02 16:47:42     80s] Reading MY_LIBSET timing library '/eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm.lib' ...
+[11/02 16:47:45     83s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[11/02 16:47:45     83s] Ending "PreSetAnalysisView" (total cpu=0:00:02.7, real=0:00:03.0, peak res=668.6M, current mem=593.2M)
+[11/02 16:47:45     83s] *** End library_loading (cpu=0.05min, real=0.05min, mem=14.0M, fe_cpu=1.39min, fe_real=6.55min, fe_mem=796.5M) ***
+[11/02 16:47:45     83s] #% Begin Load netlist data ... (date=11/02 16:47:45, mem=593.2M)
+[11/02 16:47:45     83s] *** Begin netlist parsing (mem=796.5M) ***
+[11/02 16:47:45     83s] Created 134 new cells from 1 timing libraries.
+[11/02 16:47:45     83s] Reading netlist ...
+[11/02 16:47:45     83s] Backslashed names will retain backslash and a trailing blank character.
+[11/02 16:47:45     83s] Reading verilog netlist '../netlist/filter_core_pipe_10Tadd_half_fmax_ckg.v'
+[11/02 16:47:45     83s] 
+[11/02 16:47:45     83s] *** Memory Usage v#2 (Current mem = 796.520M, initial mem = 272.285M) ***
+[11/02 16:47:45     83s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=796.5M) ***
+[11/02 16:47:45     83s] #% End Load netlist data ... (date=11/02 16:47:45, total cpu=0:00:00.1, real=0:00:00.0, peak res=598.8M, current mem=598.8M)
+[11/02 16:47:45     83s] **ERROR: (IMPSYC-300):	Cell filter_core not found.
+**ERROR: (IMPVL-904):	Can't set top cell to "filter_core" because it does not exist.  Exiting!
+[11/02 16:47:54     85s] 
+[11/02 16:47:54     85s] *** Memory Usage v#2 (Current mem = 797.527M, initial mem = 272.285M) ***
+[11/02 16:47:54     85s] 
+[11/02 16:47:54     85s] *** Summary of all messages that are not suppressed in this session:
+[11/02 16:47:54     85s] Severity  ID               Count  Summary                                  
+[11/02 16:47:54     85s] ERROR     IMPSYC-300           1  Cell %s not found.                       
+[11/02 16:47:54     85s] ERROR     IMPVL-904            2  Can't set top cell to "%s" because it do...
+[11/02 16:47:54     85s] *** Message Summary: 0 warning(s), 3 error(s)
+[11/02 16:47:54     85s] 
+[11/02 16:47:54     85s] --- Ending "Innovus" (totcpu=0:01:25, real=0:06:42, mem=797.5M) ---

@@ -1,0 +1,84 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	
+Date:		Sun Nov  2 18:46:50 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+my_rc
+Loading view definition file from /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_pipe_10Tadd_half_fmax_ckg.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.04min, real=0.05min, mem=13.0M, fe_cpu=1.16min, fe_real=4.13min, fe_mem=793.9M) ***
+*** Netlist is unique.
+Loading preference file /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_pipe_10Tadd_half_fmax_ckg.dat/gui.pref.tcl ...
+Loading place ...
+'set_default_switching_activity' finished successfully.
+my_delay
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+my_rc
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+Extraction called for design 'filter_core_pipe_10Tadd' of instances=6418 and nets=3097 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design filter_core_pipe_10Tadd.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:01.0  MEM: 1141.180M)
+<CMD> all_hold_analysis_views 
+<CMD> all_setup_analysis_views 
+<CMD> write_sdf  -ideal_clock_network innovus_out/filter_core_pipe_10Tadd_half_fmax_ckg_innovus.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_delay_calc'. This setting is recommended for generating SDF for functional  simulation applications.
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: filter_core_pipe_10Tadd
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=1156.57)
+siFlow : Timing analysis mode is single, using late cdB files
+Total number of fetched objects 3299
+End delay calculation. (MEM=1193.39 CPU=0:00:02.8 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=1166.32 CPU=0:00:03.3 REAL=0:00:04.0)
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Nov  2 18:54:12 2025
+  Total CPU time:     0:01:52
+  Total real time:    0:07:25
+  Peak memory (main): 908.15MB
+
+
+*** Memory Usage v#2 (Current mem = 1158.105M, initial mem = 272.285M) ***
+*** Message Summary: 3 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:50, real=0:07:22, mem=1158.1M) ---

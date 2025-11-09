@@ -1,0 +1,81 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	
+Date:		Sat Nov  8 10:59:09 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+my_rc
+Loading view definition file from /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_half_fmax_ckg.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.04min, real=0.07min, mem=14.0M, fe_cpu=0.72min, fe_real=2.28min, fe_mem=791.3M) ***
+*** Netlist is unique.
+Loading preference file /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_half_fmax_ckg.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+Loading place ...
+'set_default_switching_activity' finished successfully.
+my_delay
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> fit
+my_rc
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQuantus extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQuantus' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQuantus extraction to take place.
+Extraction called for design 'filter_core' of instances=6322 and nets=2969 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design filter_core.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: my_rc
+extractDetailRC Option : -outfile /tmp/innovus_temp_24121_isaserver_isa31_2025_2026_TsXK0b/filter_core_24121_dQrNCJ.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1167.5M)
+Extracted 10.0077% (CPU Time= 0:00:00.6  MEM= 1251.6M)
+Extracted 20.0064% (CPU Time= 0:00:00.6  MEM= 1252.6M)
+Extracted 30.005% (CPU Time= 0:00:00.6  MEM= 1252.6M)
+Extracted 40.0082% (CPU Time= 0:00:00.7  MEM= 1252.6M)
+Extracted 50.0068% (CPU Time= 0:00:00.8  MEM= 1253.6M)
+Extracted 60.0055% (CPU Time= 0:00:00.8  MEM= 1253.6M)
+Extracted 70.0086% (CPU Time= 0:00:00.9  MEM= 1254.6M)
+Extracted 80.0073% (CPU Time= 0:00:01.0  MEM= 1254.6M)
+Extracted 90.0059% (CPU Time= 0:00:01.1  MEM= 1254.6M)
+Extracted 100% (CPU Time= 0:00:01.2  MEM= 1254.6M)
+Number of Extracted Resistors     : 36923
+Number of Extracted Ground Cap.   : 39708
+Number of Extracted Coupling Cap. : 85988
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+ Corner: my_rc
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1238.6M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:03.0  Real Time: 0:00:05.0  MEM: 1238.566M)
+
+*** Memory Usage v#2 (Current mem = 1197.566M, initial mem = 272.285M) ***
+*** Message Summary: 4 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:15, real=0:21:51, mem=1197.6M) ---

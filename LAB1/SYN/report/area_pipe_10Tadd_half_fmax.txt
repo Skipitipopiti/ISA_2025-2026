@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : filter_core_pipe_10Tadd
+Version: S-2021.06-SP4
+Date   : Sat Nov  1 19:25:23 2025
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /eda/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                         1630
+Number of nets:                          5169
+Number of cells:                         3061
+Number of combinational cells:           2685
+Number of sequential cells:               308
+Number of macros/black boxes:               0
+Number of buf/inv:                        286
+Number of references:                      58
+
+Combinational area:               4513.222008
+Buf/Inv area:                      169.708000
+Noncombinational area:            1638.560053
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  6151.782060
+Total area:                 undefined
+1

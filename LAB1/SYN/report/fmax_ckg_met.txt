@@ -1,0 +1,91 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : filter_core
+Version: S-2021.06-SP4
+Date   : Mon Oct 27 15:55:26 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REG_0_0/Q_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: DOUT_REG/Q_reg[8]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  filter_core        5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_0_0/Q_reg[3]/CK (DFFR_X1)                           0.00       0.00 r
+  REG_0_0/Q_reg[3]/QN (DFFR_X1)                           0.07       0.07 f
+  REG_0_0/U2/ZN (INV_X2)                                  0.08       0.15 r
+  REG_0_0/Q[3] (regn_s_N9_11)                             0.00       0.15 r
+  mult_114_G2/a[3] (filter_core_DW_mult_tc_9)             0.00       0.15 r
+  mult_114_G2/U276/ZN (INV_X1)                            0.04       0.20 f
+  mult_114_G2/U387/ZN (XNOR2_X1)                          0.07       0.26 r
+  mult_114_G2/U267/ZN (NAND2_X1)                          0.06       0.32 f
+  mult_114_G2/U319/ZN (OAI22_X1)                          0.06       0.38 r
+  mult_114_G2/U49/S (FA_X1)                               0.12       0.50 f
+  mult_114_G2/U261/ZN (INV_X1)                            0.03       0.53 r
+  mult_114_G2/U262/ZN (OAI222_X1)                         0.05       0.59 f
+  mult_114_G2/U245/ZN (INV_X1)                            0.03       0.62 r
+  mult_114_G2/U247/ZN (OAI222_X1)                         0.05       0.67 f
+  mult_114_G2/U218/ZN (NAND2_X1)                          0.03       0.71 r
+  mult_114_G2/U220/ZN (AND3_X1)                           0.05       0.76 r
+  mult_114_G2/U214/ZN (OR2_X1)                            0.03       0.79 r
+  mult_114_G2/U216/ZN (NAND3_X1)                          0.04       0.83 f
+  mult_114_G2/U10/CO (FA_X1)                              0.09       0.92 f
+  mult_114_G2/U9/CO (FA_X1)                               0.09       1.01 f
+  mult_114_G2/U8/S (FA_X1)                                0.11       1.12 f
+  mult_114_G2/product[10] (filter_core_DW_mult_tc_9)      0.00       1.12 f
+  add_7_root_add_0_root_add_122_G10/A[2] (filter_core_DW01_add_6)
+                                                          0.00       1.12 f
+  add_7_root_add_0_root_add_122_G10/U1_2/CO (FA_X1)       0.10       1.22 f
+  add_7_root_add_0_root_add_122_G10/U1_3/CO (FA_X1)       0.10       1.32 f
+  add_7_root_add_0_root_add_122_G10/U4/ZN (NAND2_X1)      0.03       1.36 r
+  add_7_root_add_0_root_add_122_G10/U6/ZN (NAND3_X1)      0.04       1.39 f
+  add_7_root_add_0_root_add_122_G10/U1_5/CO (FA_X1)       0.09       1.49 f
+  add_7_root_add_0_root_add_122_G10/U1_6/CO (FA_X1)       0.09       1.58 f
+  add_7_root_add_0_root_add_122_G10/U1_7/S (FA_X1)        0.14       1.71 r
+  add_7_root_add_0_root_add_122_G10/SUM[7] (filter_core_DW01_add_6)
+                                                          0.00       1.71 r
+  add_3_root_add_0_root_add_122_G10/B[7] (filter_core_DW01_add_4)
+                                                          0.00       1.71 r
+  add_3_root_add_0_root_add_122_G10/U1_7/S (FA_X1)        0.12       1.83 f
+  add_3_root_add_0_root_add_122_G10/SUM[7] (filter_core_DW01_add_4)
+                                                          0.00       1.83 f
+  add_0_root_add_0_root_add_122_G10/A[7] (filter_core_DW01_add_0)
+                                                          0.00       1.83 f
+  add_0_root_add_0_root_add_122_G10/U1_7/CO (FA_X1)       0.10       1.94 f
+  add_0_root_add_0_root_add_122_G10/U1_8/S (FA_X1)        0.13       2.07 r
+  add_0_root_add_0_root_add_122_G10/SUM[8] (filter_core_DW01_add_0)
+                                                          0.00       2.07 r
+  DOUT_REG/R[8] (regn_s_N9_1)                             0.00       2.07 r
+  DOUT_REG/Q_reg[8]/D (DFFR_X1)                           0.01       2.08 r
+  data arrival time                                                  2.08
+
+  clock MY_CLK (rise edge)                                2.18       2.18
+  clock network delay (ideal)                             0.00       2.18
+  clock uncertainty                                      -0.07       2.11
+  DOUT_REG/Q_reg[8]/CK (DFFR_X1)                          0.00       2.11 r
+  library setup time                                     -0.03       2.08
+  data required time                                                 2.08
+  --------------------------------------------------------------------------
+  data required time                                                 2.08
+  data arrival time                                                 -2.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

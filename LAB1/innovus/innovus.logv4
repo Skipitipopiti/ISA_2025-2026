@@ -1,0 +1,212 @@
+[11/01 18:12:46      0s] 
+[11/01 18:12:46      0s] Cadence Innovus(TM) Implementation System.
+[11/01 18:12:46      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/01 18:12:46      0s] 
+[11/01 18:12:46      0s] Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+[11/01 18:12:46      0s] Options:	
+[11/01 18:12:46      0s] Date:		Sat Nov  1 18:12:46 2025
+[11/01 18:12:46      0s] Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+[11/01 18:12:46      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[11/01 18:12:46      0s] 
+[11/01 18:12:46      0s] License:
+[11/01 18:12:47      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[11/01 18:12:47      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/01 18:13:53     34s] @(#)CDS: Innovus v20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/01 18:13:53     34s] @(#)CDS: NanoRoute 20.11-s130_1 NR200802-2257/20_11-UB (database version 18.20.512) {superthreading v2.9}
+[11/01 18:13:53     34s] @(#)CDS: AAE 20.11-s008 (64bit) 08/05/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/01 18:13:53     34s] @(#)CDS: CTE 20.11-s059_1 () Aug  2 2020 05:46:30 ( )
+[11/01 18:13:53     34s] @(#)CDS: SYNTECH 20.11-s028_1 () Aug  1 2020 06:14:27 ( )
+[11/01 18:13:53     34s] @(#)CDS: CPE v20.11-s013
+[11/01 18:13:53     34s] @(#)CDS: IQuantus/TQuantus 19.1.3-s260 (64bit) Thu May 28 10:57:28 PDT 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/01 18:13:53     34s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[11/01 18:13:53     34s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[11/01 18:13:53     34s] @(#)CDS: RCDB 11.15.0
+[11/01 18:13:53     34s] @(#)CDS: STYLUS 20.10-p011_1 (06/03/2020 04:47 PDT)
+[11/01 18:13:53     34s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_21023_isaserver_isa31_2025_2026_5me5XX.
+
+[11/01 18:13:53     34s] Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+[11/01 18:14:00     37s] 
+[11/01 18:14:00     37s] **INFO:  MMMC transition support version v31-84 
+[11/01 18:14:00     37s] 
+[11/01 18:14:00     37s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/01 18:14:00     37s] <CMD> suppressMessage ENCEXT-2799
+[11/01 18:14:01     37s] <CMD> win
+[11/01 18:16:13     51s] <CMD> encMessage warning 0
+[11/01 18:16:13     51s] Suppress "**WARN ..." messages.
+[11/01 18:16:13     51s] <CMD> encMessage debug 0
+[11/01 18:16:13     51s] <CMD> encMessage info 0
+[11/01 18:16:15     52s] Loading view definition file from /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_half_fmax_ckg.dat/viewDefinition.tcl
+[11/01 18:16:17     55s] *** End library_loading (cpu=0.04min, real=0.03min, mem=11.0M, fe_cpu=0.92min, fe_real=3.52min, fe_mem=797.8M) ***
+[11/01 18:16:21     55s] *** Netlist is unique.
+[11/01 18:16:21     56s] Loading preference file /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_half_fmax_ckg.dat/gui.pref.tcl ...
+[11/01 18:16:24     57s] Loading place ...
+[11/01 18:16:27     58s] {RT my_rc 0 10 10 {4 1} {7 0} {9 0} 3}
+[11/01 18:16:28     59s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[11/01 18:16:28     59s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+[11/01 18:16:28     59s] timing_enable_default_delay_arc
+[11/01 18:16:54     60s] <CMD> fit
+[11/01 18:20:15     72s] <CMD> reset_parasitics
+[11/01 18:20:15     72s] Performing RC Extraction ...
+[11/01 18:20:15     72s] <CMD> extractRC
+[11/01 18:20:15     72s] Extraction called for design 'filter_core' of instances=6238 and nets=2969 using extraction engine 'preRoute' .
+[11/01 18:20:15     72s] PreRoute RC Extraction called for design filter_core.
+[11/01 18:20:15     72s] RC Extraction called in multi-corner(1) mode.
+[11/01 18:20:15     72s] RCMode: PreRoute
+[11/01 18:20:15     72s]       RC Corner Indexes            0   
+[11/01 18:20:15     72s] Capacitance Scaling Factor   : 1.00000 
+[11/01 18:20:15     72s] Resistance Scaling Factor    : 1.00000 
+[11/01 18:20:15     72s] Clock Cap. Scaling Factor    : 1.00000 
+[11/01 18:20:15     72s] Clock Res. Scaling Factor    : 1.00000 
+[11/01 18:20:15     72s] Shrink Factor                : 1.00000
+[11/01 18:20:15     72s] PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+[11/01 18:20:15     72s] Using capacitance table file ...
+[11/01 18:20:15     72s] LayerId::1 widthSet size::4
+[11/01 18:20:15     72s] LayerId::2 widthSet size::4
+[11/01 18:20:15     72s] LayerId::3 widthSet size::4
+[11/01 18:20:15     72s] LayerId::4 widthSet size::4
+[11/01 18:20:15     72s] LayerId::5 widthSet size::4
+[11/01 18:20:15     72s] LayerId::6 widthSet size::4
+[11/01 18:20:15     72s] LayerId::7 widthSet size::4
+[11/01 18:20:15     72s] LayerId::8 widthSet size::4
+[11/01 18:20:15     72s] LayerId::9 widthSet size::4
+[11/01 18:20:15     72s] LayerId::10 widthSet size::3
+[11/01 18:20:15     72s] Updating RC grid for preRoute extraction ...
+[11/01 18:20:15     72s] Initializing multi-corner capacitance tables ... 
+[11/01 18:20:15     73s] Initializing multi-corner resistance tables ...
+[11/01 18:20:15     73s] **Info: Trial Route has Max Route Layer 15/10.
+[11/01 18:20:15     73s] {RT my_rc 0 10 10 {4 1} {7 0} {9 0} 3}
+[11/01 18:20:15     73s] Preroute length aware model : LLS: 2-3 ; HLS: 3-5 ; rDens: 0.237017 ; uaWl: 1.000000 ; uaWlH: 0.274674 ; aWlH: 0.000000 ; Pmax: 0.847200 ; wcR: 0.535700 ; newSi: 0.077600 ; pMod: 81 ; 
+[11/01 18:20:15     73s] PreRoute RC Extraction DONE (CPU Time: 0:00:00.5  Real Time: 0:00:00.0  MEM: 1173.047M)
+[11/01 18:22:06     87s] <CMD> set_power_analysis_mode -reset
+[11/01 18:22:06     87s] <CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+[11/01 18:23:58     95s] **ERROR: (VOLTUS-1089):	Activity file () does not exist.
+[11/01 18:25:02    107s] <CMD> set_power_output_dir -reset
+[11/01 18:25:02    107s] <CMD> set_power_output_dir ./
+[11/01 18:25:02    107s] <CMD> set_default_switching_activity -reset
+[11/01 18:25:02    107s] <CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+[11/01 18:25:02    107s] <CMD> read_activity_file -reset
+[11/01 18:25:02    107s] <CMD> read_activity_file -format VCD -scope /tb_fir/UUT -start {} -end {} -block {} ../vcd/filter_core_half_fmax_ckg_syn_innovus.vcd
+[11/01 18:25:02    107s] 
+[11/01 18:25:02    107s] Power Net Detected:
+[11/01 18:25:02    107s]         Voltage	    Name
+[11/01 18:25:02    107s]              0V	    VSS
+[11/01 18:25:02    107s]            1.1V	    VDD
+[11/01 18:25:03    107s] #################################################################################
+[11/01 18:25:03    107s] # Design Stage: PreRoute
+[11/01 18:25:03    107s] # Design Name: filter_core
+[11/01 18:25:03    107s] # Design Mode: 45nm
+[11/01 18:25:03    107s] # Analysis Mode: MMMC OCV 
+[11/01 18:25:03    107s] # Parasitics Mode: No SPEF/RCDB 
+[11/01 18:25:03    107s] # Signoff Settings: SI Off 
+[11/01 18:25:03    107s] #################################################################################
+[11/01 18:25:03    108s] *** CDM Built up (cpu=0:00:00.4  real=0:00:00.0  mem= 1189.5M) ***
+[11/01 18:25:03    108s]              0V	    VSS
+[11/01 18:25:03    108s]            1.1V	    VDD
+[11/01 18:25:03    108s] MY_CLK(229.358MHz) <CMD> set_power -reset
+[11/01 18:25:04    109s] <CMD> set_powerup_analysis -reset
+[11/01 18:25:04    109s] <CMD> set_dynamic_power_simulation -reset
+[11/01 18:25:04    109s] <CMD> report_power -rail_analysis_format VS -outfile .//filter_core.rpt
+[11/01 18:25:04    109s] #################################################################################
+[11/01 18:25:04    109s] # Design Stage: PreRoute
+[11/01 18:25:04    109s] # Design Name: filter_core
+[11/01 18:25:04    109s] # Design Mode: 45nm
+[11/01 18:25:04    109s] # Analysis Mode: MMMC OCV 
+[11/01 18:25:04    109s] # Parasitics Mode: No SPEF/RCDB 
+[11/01 18:25:04    109s] # Signoff Settings: SI Off 
+[11/01 18:25:04    109s] #################################################################################
+[11/01 18:25:04    109s] Calculate early delays in OCV mode...
+[11/01 18:25:04    109s] Calculate late delays in OCV mode...
+[11/01 18:25:04    109s] Topological Sorting (REAL = 0:00:00.0, MEM = 1223.5M, InitMEM = 1223.5M)
+[11/01 18:25:04    109s] Start delay calculation (fullDC) (1 T). (MEM=1223.52)
+[11/01 18:25:04    109s] Start AAE Lib Loading. (MEM=1243.25)
+[11/01 18:25:04    109s] End AAE Lib Loading. (MEM=1252.79 CPU=0:00:00.0 Real=0:00:00.0)
+[11/01 18:25:04    109s] End AAE Lib Interpolated Model. (MEM=1252.79 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/01 18:25:04    109s] First Iteration Infinite Tw... 
+[11/01 18:25:07    111s] Total number of fetched objects 3072
+[11/01 18:25:07    111s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/01 18:25:07    111s] End delay calculation. (MEM=1269.86 CPU=0:00:02.0 REAL=0:00:02.0)
+[11/01 18:25:07    112s] End delay calculation (fullDC). (MEM=1242.78 CPU=0:00:02.7 REAL=0:00:03.0)
+[11/01 18:25:07    112s] *** CDM Built up (cpu=0:00:02.9  real=0:00:03.0  mem= 1242.8M) ***
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] Begin Power Analysis
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s]              0V	    VSS
+[11/01 18:25:07    112s]            1.1V	    VDD
+[11/01 18:25:07    112s] Begin Processing Timing Library for Power Calculation
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] Begin Processing Timing Library for Power Calculation
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] Begin Processing Power Net/Grid for Power Calculation
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=979.79MB/2373.18MB/979.80MB)
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] Begin Processing Timing Window Data for Power Calculation
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=979.81MB/2373.18MB/979.81MB)
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] Begin Processing User Attributes
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=979.82MB/2373.18MB/979.82MB)
+[11/01 18:25:07    112s] 
+[11/01 18:25:07    112s] Begin Processing Signal Activity
+[11/01 18:25:07    112s] 
+[11/01 18:25:08    112s] Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=980.04MB/2373.18MB/980.04MB)
+[11/01 18:25:08    112s] 
+[11/01 18:25:08    112s] Begin Power Computation
+[11/01 18:25:08    112s] 
+[11/01 18:25:08    112s]       ----------------------------------------------------------
+[11/01 18:25:08    112s]       # of cell(s) missing both power/leakage table: 0
+[11/01 18:25:08    112s]       # of cell(s) missing power table: 0
+[11/01 18:25:08    112s]       # of cell(s) missing leakage table: 0
+[11/01 18:25:08    112s]       # of MSMV cell(s) missing power_level: 0
+[11/01 18:25:08    112s]       ----------------------------------------------------------
+[11/01 18:25:08    112s] 
+[11/01 18:25:08    112s] 
+[11/01 18:25:09    113s] Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=980.52MB/2373.18MB/980.52MB)
+[11/01 18:25:09    113s] 
+[11/01 18:25:09    113s] Begin Processing User Attributes
+[11/01 18:25:09    113s] 
+[11/01 18:25:09    113s] Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=980.52MB/2373.18MB/980.59MB)
+[11/01 18:25:09    113s] 
+[11/01 18:25:09    113s] Ended Power Analysis: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=980.59MB/2373.18MB/980.59MB)
+[11/01 18:25:09    113s] 
+[11/01 18:25:09    113s] *
+[11/01 18:25:09    113s] 
+[11/01 18:25:09    113s] 
+[11/01 18:25:09    113s] 
+[11/01 18:25:09    113s] Total Power
+[11/01 18:25:09    113s] -----------------------------------------------------------------------------------------
+[11/01 18:25:09    113s] Total Internal Power:        0.98057136 	   56.0175%%
+[11/01 18:25:09    113s] Total Switching Power:       0.67141092 	   38.3560%%
+[11/01 18:25:09    113s] Total Leakage Power:         0.09849036 	    5.6265%%
+[11/01 18:25:09    113s] Total Power:                 1.75047264
+[11/01 18:25:09    113s] -----------------------------------------------------------------------------------------
+[11/01 18:25:26    117s] <CMD> uiSetTool cut
+[11/01 18:26:34    126s] <CMD> report_power -outfile reports/power_half_fmax_ckg_innovus.txt -sort { total }
+[11/01 18:26:34    126s] *
+[11/01 18:26:34    126s] 
+[11/01 18:26:34    126s] 
+[11/01 18:26:34    126s] 
+[11/01 18:26:34    126s] Total Power
+[11/01 18:26:34    126s] -----------------------------------------------------------------------------------------
+[11/01 18:26:34    126s] Total Internal Power:        0.98057136 	   56.0175%%
+[11/01 18:26:34    126s] Total Switching Power:       0.67141092 	   38.3560%%
+[11/01 18:26:34    126s] Total Leakage Power:         0.09849036 	    5.6265%%
+[11/01 18:26:34    126s] Total Power:                 1.75047264
+[11/01 18:26:34    126s] -----------------------------------------------------------------------------------------
+[11/01 18:39:28    221s] <CMD> win off
+[11/01 18:39:36    222s] invalid command name "quit"
+[11/01 18:39:39    223s] 
+[11/01 18:39:39    223s] *** Memory Usage v#2 (Current mem = 1168.500M, initial mem = 272.285M) ***
+[11/01 18:39:39    223s] 
+[11/01 18:39:39    223s] *** Summary of all messages that are not suppressed in this session:
+[11/01 18:39:39    223s] Severity  ID               Count  Summary                                  
+[11/01 18:39:39    223s] ERROR     VOLTUS-1089          4  Activity file (%s) does not exist.       
+[11/01 18:39:39    223s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[11/01 18:39:39    223s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[11/01 18:39:39    223s] ERROR     VOLTUS-1089          4  Activity file (%s) does not exist.       
+[11/01 18:39:39    223s] *** Message Summary: 2 warning(s), 4 error(s)
+[11/01 18:39:39    223s] 
+[11/01 18:39:39    223s] --- Ending "Innovus" (totcpu=0:03:43, real=0:26:53, mem=1168.5M) ---

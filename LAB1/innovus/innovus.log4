@@ -1,0 +1,286 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	
+Date:		Sat Nov  1 18:12:46 2025
+Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+my_rc
+Loading view definition file from /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_half_fmax_ckg.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.04min, real=0.03min, mem=11.0M, fe_cpu=0.92min, fe_real=3.52min, fe_mem=797.8M) ***
+*** Netlist is unique.
+Loading preference file /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_half_fmax_ckg.dat/gui.pref.tcl ...
+Loading place ...
+'set_default_switching_activity' finished successfully.
+my_delay
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> fit
+my_rc
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+Extraction called for design 'filter_core' of instances=6238 and nets=2969 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design filter_core.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.5  Real Time: 0:00:00.0  MEM: 1173.047M)
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+**ERROR: (VOLTUS-1089):	Activity file () does not exist.
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+** INFO:  (VOLTUS_POWR-3229): Using user defined default frequency 100MHz for power calculation.
+
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> read_activity_file -format VCD -scope /tb_fir/UUT -start {} -end {} -block {} ../vcd/filter_core_half_fmax_ckg_syn_innovus.vcd
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+           1.1V	    VDD
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: filter_core
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+             0V	    VSS
+           1.1V	    VDD
+MY_CLK(229.358MHz) Parsing VCD file ../vcd/filter_core_half_fmax_ckg_syn_innovus.vcd
+
+Starting Reading VCD variables
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT)
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT): 10%
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT): 20%
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT): 30%
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT): 40%
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT): 50%
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT): 60%
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT): 70%
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT): 80%
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT): 90%
+
+Finished Reading VCD variables
+2025-Nov-01 18:25:03 (2025-Nov-01 17:25:03 GMT)
+   
+The vcd command required:
+   		0.35 user, 0.03 system, and 0.39 real seconds
+
+   Total number of value changes: 392311.
+
+   Total simulation time: 1.7706e-06s.
+
+   With this vcd command,  389380 value changes and 1.7706e-06 second
+simulation time were counted for power consumption calculation.
+
+  Filename (activity)                    :
+../vcd/filter_core_half_fmax_ckg_syn_innovus.vcd
+  Names in file that matched to design   : 2931/2931
+  Annotation coverage for this file
+   (Unique nets matched/Total nets)       : 2931/2931 = 100%
+
+
+  Total annotation coverage for all files of type VCD: 2931/2931 = 100%
+  Percent of VCD annotated nets with zero toggles: 198/2931 = 6.75537%
+
+'read_activity_file' finished successfully.
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//filter_core.rpt
+Using Power View: MyAnView.
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: filter_core
+# Design Mode: 45nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=1223.52)
+Total number of fetched objects 3072
+End delay calculation. (MEM=1269.86 CPU=0:00:02.0 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=1242.78 CPU=0:00:02.7 REAL=0:00:03.0)
+
+Begin Power Analysis
+
+             0V	    VSS
+           1.1V	    VDD
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=979.79MB/2373.18MB/979.80MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=979.81MB/2373.18MB/979.81MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=979.82MB/2373.18MB/979.82MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Nov-01 18:25:07 (2025-Nov-01 17:25:07 GMT)
+2025-Nov-01 18:25:07 (2025-Nov-01 17:25:07 GMT): 10%
+2025-Nov-01 18:25:07 (2025-Nov-01 17:25:07 GMT): 20%
+2025-Nov-01 18:25:07 (2025-Nov-01 17:25:07 GMT): 30%
+2025-Nov-01 18:25:07 (2025-Nov-01 17:25:07 GMT): 40%
+2025-Nov-01 18:25:07 (2025-Nov-01 17:25:07 GMT): 50%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 60%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 70%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 80%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 90%
+
+Finished Levelizing
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT)
+
+Starting Activity Propagation
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT)
+
+Finished Activity Propagation
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT)
+
+Activity annotation summary:
+        Primary Inputs : 210/210 = 100%
+          Flop outputs : 234/234 = 100%
+  Memory/Macro outputs : 0/0 = 0%
+      Tristate outputs : 0/0 = 0%
+            Total Nets : 2931/2931 = 100%
+
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=980.04MB/2373.18MB/980.04MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT)
+ ... Calculating switching power
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 10%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 20%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 30%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 40%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 50%
+ ... Calculating internal and leakage power
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 60%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 70%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 80%
+2025-Nov-01 18:25:08 (2025-Nov-01 17:25:08 GMT): 90%
+
+Finished Calculating power
+2025-Nov-01 18:25:09 (2025-Nov-01 17:25:09 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=980.52MB/2373.18MB/980.52MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=980.52MB/2373.18MB/980.59MB)
+
+Ended Power Analysis: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=980.59MB/2373.18MB/980.59MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=980.59MB/2373.18MB/980.60MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.98057136 	   56.0175%
+Total Switching Power:       0.67141092 	   38.3560%
+Total Leakage Power:         0.09849036 	    5.6265%
+Total Power:                 1.75047264
+-----------------------------------------------------------------------------------------
+** WARN:  (VOLTUS_POWR-2041): There are some instances in the design which are not connected to any power or ground nets.
+These instances will be added to default power/ground rail uti files.
+Use 'itaputil list <uti-file>' command to get the list of instances.
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=981.00MB/2373.18MB/981.04MB)
+
+Begin Creating Binary Database
+Ended Creating Binary Database: (cpu=0:00:01, real=0:00:02,
+mem(process/total/peak)=1493.84MB/3138.61MB/1493.85MB)
+
+Output file is .//filter_core.rpt.
+<CMD> uiSetTool cut
+<CMD> report_power -outfile reports/power_half_fmax_ckg_innovus.txt -sort { total }
+Using Power View: MyAnView.
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=911.60MB/2300.61MB/1493.92MB)
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.98057136 	   56.0175%
+Total Switching Power:       0.67141092 	   38.3560%
+Total Leakage Power:         0.09849036 	    5.6265%
+Total Power:                 1.75047264
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=912.18MB/2300.61MB/1493.92MB)
+
+
+Output file is reports/power_half_fmax_ckg_innovus.txt.
+<CMD> win off
+invalid command name "quit"
+
+*** Memory Usage v#2 (Current mem = 1168.500M, initial mem = 272.285M) ***
+*** Message Summary: 2 warning(s), 4 error(s)
+
+--- Ending "Innovus" (totcpu=0:03:43, real=0:26:53, mem=1168.5M) ---

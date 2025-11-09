@@ -1,0 +1,87 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : filter_core_pipe_10Tadd
+Version: S-2021.06-SP4
+Date   : Sat Nov  8 18:18:26 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REG_3_0/Q_reg[0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REG_4_1/Q_reg[8]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  filter_core_pipe_10Tadd
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_3_0/Q_reg[0]/CK (DFFR_X1)                           0.00       0.00 r
+  REG_3_0/Q_reg[0]/QN (DFFR_X1)                           0.06       0.06 f
+  REG_3_0/U2/ZN (INV_X1)                                  0.04       0.10 r
+  REG_3_0/Q[0] (regn_s_N9_19)                             0.00       0.10 r
+  mult_119_G5/a[0] (filter_core_pipe_10Tadd_DW_mult_tc_6)
+                                                          0.00       0.10 r
+  mult_119_G5/U340/ZN (INV_X1)                            0.04       0.14 f
+  mult_119_G5/U230/ZN (NAND2_X1)                          0.07       0.21 r
+  mult_119_G5/U471/ZN (OAI22_X1)                          0.05       0.26 f
+  mult_119_G5/U339/ZN (AND3_X1)                           0.04       0.30 f
+  mult_119_G5/U246/Z (MUX2_X1)                            0.07       0.37 f
+  mult_119_G5/U244/ZN (NAND2_X1)                          0.03       0.40 r
+  mult_119_G5/U222/ZN (AND3_X2)                           0.05       0.46 r
+  mult_119_G5/U294/ZN (OAI222_X1)                         0.05       0.51 f
+  mult_119_G5/U320/ZN (NAND2_X1)                          0.04       0.55 r
+  mult_119_G5/U298/ZN (NAND3_X1)                          0.04       0.58 f
+  mult_119_G5/U316/ZN (NAND2_X1)                          0.03       0.62 r
+  mult_119_G5/U247/ZN (AND3_X2)                           0.06       0.67 r
+  mult_119_G5/U249/ZN (OAI222_X1)                         0.05       0.72 f
+  mult_119_G5/U282/ZN (NAND2_X1)                          0.04       0.76 r
+  mult_119_G5/U276/ZN (NAND3_X1)                          0.04       0.80 f
+  mult_119_G5/U358/ZN (NAND2_X1)                          0.04       0.84 r
+  mult_119_G5/U268/ZN (NAND3_X1)                          0.04       0.87 f
+  mult_119_G5/U362/ZN (NAND2_X1)                          0.04       0.91 r
+  mult_119_G5/U364/ZN (NAND3_X1)                          0.04       0.95 f
+  mult_119_G5/U350/ZN (NAND2_X1)                          0.04       0.98 r
+  mult_119_G5/U347/ZN (NAND3_X1)                          0.04       1.02 f
+  mult_119_G5/U365/ZN (NAND2_X1)                          0.04       1.06 r
+  mult_119_G5/U368/ZN (NAND3_X1)                          0.04       1.10 f
+  mult_119_G5/U238/ZN (NAND2_X1)                          0.04       1.14 r
+  mult_119_G5/U372/ZN (NAND3_X1)                          0.04       1.18 f
+  mult_119_G5/U241/ZN (NAND2_X1)                          0.03       1.21 r
+  mult_119_G5/U262/ZN (NAND3_X1)                          0.03       1.24 f
+  mult_119_G5/U305/ZN (NAND2_X1)                          0.03       1.27 r
+  mult_119_G5/U307/ZN (NAND3_X1)                          0.03       1.30 f
+  mult_119_G5/U337/ZN (XNOR2_X1)                          0.06       1.36 f
+  mult_119_G5/U336/ZN (XNOR2_X1)                          0.05       1.41 f
+  mult_119_G5/product[16] (filter_core_pipe_10Tadd_DW_mult_tc_6)
+                                                          0.00       1.41 f
+  REG_4_1/R[8] (regn_s_N9_8)                              0.00       1.41 f
+  REG_4_1/Q_reg[8]/D (DFFR_X1)                            0.01       1.42 f
+  data arrival time                                                  1.42
+
+  clock MY_CLK (rise edge)                                1.53       1.53
+  clock network delay (ideal)                             0.00       1.53
+  clock uncertainty                                      -0.07       1.46
+  REG_4_1/Q_reg[8]/CK (DFFR_X1)                           0.00       1.46 r
+  library setup time                                     -0.04       1.42
+  data required time                                                 1.42
+  --------------------------------------------------------------------------
+  data required time                                                 1.42
+  data arrival time                                                 -1.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,120 @@
+[11/02 18:46:50      0s] 
+[11/02 18:46:50      0s] Cadence Innovus(TM) Implementation System.
+[11/02 18:46:50      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/02 18:46:50      0s] 
+[11/02 18:46:50      0s] Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+[11/02 18:46:50      0s] Options:	
+[11/02 18:46:50      0s] Date:		Sun Nov  2 18:46:50 2025
+[11/02 18:46:50      0s] Host:		isaserver (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (6cores*6cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+[11/02 18:46:50      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[11/02 18:46:50      0s] 
+[11/02 18:46:50      0s] License:
+[11/02 18:46:50      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[11/02 18:46:50      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/02 18:47:47     33s] @(#)CDS: Innovus v20.11-s130_1 (64bit) 08/05/2020 15:53 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/02 18:47:47     33s] @(#)CDS: NanoRoute 20.11-s130_1 NR200802-2257/20_11-UB (database version 18.20.512) {superthreading v2.9}
+[11/02 18:47:47     33s] @(#)CDS: AAE 20.11-s008 (64bit) 08/05/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/02 18:47:47     33s] @(#)CDS: CTE 20.11-s059_1 () Aug  2 2020 05:46:30 ( )
+[11/02 18:47:47     33s] @(#)CDS: SYNTECH 20.11-s028_1 () Aug  1 2020 06:14:27 ( )
+[11/02 18:47:47     33s] @(#)CDS: CPE v20.11-s013
+[11/02 18:47:47     33s] @(#)CDS: IQuantus/TQuantus 19.1.3-s260 (64bit) Thu May 28 10:57:28 PDT 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/02 18:47:47     33s] @(#)CDS: OA 22.60-s011 Tue Jun 16 12:27:00 2020
+[11/02 18:47:47     33s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[11/02 18:47:47     33s] @(#)CDS: RCDB 11.15.0
+[11/02 18:47:47     33s] @(#)CDS: STYLUS 20.10-p011_1 (06/03/2020 04:47 PDT)
+[11/02 18:47:47     33s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_8619_isaserver_isa31_2025_2026_Q5BKLP.
+
+[11/02 18:47:47     33s] Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+[11/02 18:47:53     35s] 
+[11/02 18:47:53     35s] **INFO:  MMMC transition support version v31-84 
+[11/02 18:47:53     35s] 
+[11/02 18:47:53     35s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/02 18:47:53     35s] <CMD> suppressMessage ENCEXT-2799
+[11/02 18:47:53     35s] <CMD> win
+[11/02 18:50:54     65s] <CMD> encMessage warning 0
+[11/02 18:50:54     65s] Suppress "**WARN ..." messages.
+[11/02 18:50:54     65s] <CMD> encMessage debug 0
+[11/02 18:50:54     65s] <CMD> encMessage info 0
+[11/02 18:50:55     67s] Loading view definition file from /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_pipe_10Tadd_half_fmax_ckg.dat/viewDefinition.tcl
+[11/02 18:50:58     69s] *** End library_loading (cpu=0.04min, real=0.05min, mem=13.0M, fe_cpu=1.16min, fe_real=4.13min, fe_mem=793.9M) ***
+[11/02 18:50:59     70s] *** Netlist is unique.
+[11/02 18:51:00     70s] Loading preference file /home/isa31_2025_2026/LABS/LAB1/innovus/design/filter_core_pipe_10Tadd_half_fmax_ckg.dat/gui.pref.tcl ...
+[11/02 18:51:03     72s] Loading place ...
+[11/02 18:51:06     73s] {RT my_rc 0 10 10 {4 1} {7 0} {9 0} 3}
+[11/02 18:51:07     74s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[11/02 18:51:07     75s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.11-s130_1. They will be removed in the next release. 
+[11/02 18:51:07     75s] timing_enable_default_delay_arc
+[11/02 18:52:44     90s] <CMD> reset_parasitics
+[11/02 18:52:44     90s] Performing RC Extraction ...
+[11/02 18:52:44     90s] <CMD> extractRC
+[11/02 18:52:44     90s] Extraction called for design 'filter_core_pipe_10Tadd' of instances=6418 and nets=3097 using extraction engine 'preRoute' .
+[11/02 18:52:44     90s] PreRoute RC Extraction called for design filter_core_pipe_10Tadd.
+[11/02 18:52:44     90s] RC Extraction called in multi-corner(1) mode.
+[11/02 18:52:44     90s] RCMode: PreRoute
+[11/02 18:52:44     90s]       RC Corner Indexes            0   
+[11/02 18:52:44     90s] Capacitance Scaling Factor   : 1.00000 
+[11/02 18:52:44     90s] Resistance Scaling Factor    : 1.00000 
+[11/02 18:52:44     90s] Clock Cap. Scaling Factor    : 1.00000 
+[11/02 18:52:44     90s] Clock Res. Scaling Factor    : 1.00000 
+[11/02 18:52:44     90s] Shrink Factor                : 1.00000
+[11/02 18:52:44     90s] PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+[11/02 18:52:44     90s] Using capacitance table file ...
+[11/02 18:52:44     90s] LayerId::1 widthSet size::4
+[11/02 18:52:44     90s] LayerId::2 widthSet size::4
+[11/02 18:52:44     90s] LayerId::3 widthSet size::4
+[11/02 18:52:44     90s] LayerId::4 widthSet size::4
+[11/02 18:52:44     90s] LayerId::5 widthSet size::4
+[11/02 18:52:44     90s] LayerId::6 widthSet size::4
+[11/02 18:52:44     90s] LayerId::7 widthSet size::4
+[11/02 18:52:44     90s] LayerId::8 widthSet size::4
+[11/02 18:52:44     90s] LayerId::9 widthSet size::4
+[11/02 18:52:44     90s] LayerId::10 widthSet size::3
+[11/02 18:52:44     90s] Updating RC grid for preRoute extraction ...
+[11/02 18:52:44     90s] Initializing multi-corner capacitance tables ... 
+[11/02 18:52:45     91s] Initializing multi-corner resistance tables ...
+[11/02 18:52:45     91s] **Info: Trial Route has Max Route Layer 15/10.
+[11/02 18:52:45     91s] {RT my_rc 0 10 10 {4 1} {7 0} {9 0} 3}
+[11/02 18:52:45     91s] Preroute length aware model : LLS: 2-3 ; HLS: 3-5 ; rDens: 0.233502 ; uaWl: 1.000000 ; uaWlH: 0.301564 ; aWlH: 0.000000 ; Pmax: 0.853500 ; wcR: 0.535700 ; newSi: 0.077600 ; pMod: 81 ; 
+[11/02 18:52:45     91s] PreRoute RC Extraction DONE (CPU Time: 0:00:00.4  Real Time: 0:00:01.0  MEM: 1141.180M)
+[11/02 18:53:04     93s] <CMD> all_hold_analysis_views 
+[11/02 18:53:04     93s] <CMD> all_setup_analysis_views 
+[11/02 18:53:38    101s] <CMD> write_sdf  -ideal_clock_network innovus_out/filter_core_pipe_10Tadd_half_fmax_ckg_innovus.sdf
+[11/02 18:53:38    101s] **WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_delay_calc'. This setting is recommended for generating SDF for functional  simulation applications.
+[11/02 18:53:38    101s] #################################################################################
+[11/02 18:53:38    101s] # Design Stage: PreRoute
+[11/02 18:53:38    101s] # Design Name: filter_core_pipe_10Tadd
+[11/02 18:53:38    101s] # Design Mode: 45nm
+[11/02 18:53:38    101s] # Analysis Mode: MMMC Non-OCV 
+[11/02 18:53:38    101s] # Parasitics Mode: No SPEF/RCDB 
+[11/02 18:53:38    101s] # Signoff Settings: SI Off 
+[11/02 18:53:38    101s] #################################################################################
+[11/02 18:53:38    102s] Topological Sorting (REAL = 0:00:00.0, MEM = 1156.6M, InitMEM = 1156.6M)
+[11/02 18:53:38    102s] Start delay calculation (fullDC) (1 T). (MEM=1156.57)
+[11/02 18:53:38    102s] siFlow : Timing analysis mode is single, using late cdB files
+[11/02 18:53:38    102s] Start AAE Lib Loading. (MEM=1164.78)
+[11/02 18:53:38    102s] End AAE Lib Loading. (MEM=1174.32 CPU=0:00:00.0 Real=0:00:00.0)
+[11/02 18:53:38    102s] End AAE Lib Interpolated Model. (MEM=1174.32 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/02 18:53:38    102s] First Iteration Infinite Tw... 
+[11/02 18:53:41    105s] Total number of fetched objects 3299
+[11/02 18:53:41    105s] End Timing Check Calculation. (CPU Time=0:00:00.1, Real Time=0:00:00.0)
+[11/02 18:53:41    105s] End delay calculation. (MEM=1193.39 CPU=0:00:02.8 REAL=0:00:02.0)
+[11/02 18:53:42    105s] End delay calculation (fullDC). (MEM=1166.32 CPU=0:00:03.3 REAL=0:00:04.0)
+[11/02 18:53:42    105s] *** CDM Built up (cpu=0:00:03.7  real=0:00:04.0  mem= 1166.3M) ***
+[11/02 18:54:12    109s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Nov  2 18:54:12 2025
+  Total CPU time:     0:01:52
+  Total real time:    0:07:25
+  Peak memory (main): 908.15MB
+
+[11/02 18:54:12    109s] 
+[11/02 18:54:12    109s] *** Memory Usage v#2 (Current mem = 1158.105M, initial mem = 272.285M) ***
+[11/02 18:54:12    110s] 
+[11/02 18:54:12    110s] *** Summary of all messages that are not suppressed in this session:
+[11/02 18:54:12    110s] Severity  ID               Count  Summary                                  
+[11/02 18:54:12    110s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[11/02 18:54:12    110s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[11/02 18:54:12    110s] WARNING   SDF-808              1  The software is currently operating in a...
+[11/02 18:54:12    110s] *** Message Summary: 3 warning(s), 0 error(s)
+[11/02 18:54:12    110s] 
+[11/02 18:54:12    110s] --- Ending "Innovus" (totcpu=0:01:50, real=0:07:22, mem=1158.1M) ---
