@@ -1,12 +1,6 @@
 # Cartelle work
 **/work/
 
-# File compilati
-*.class
-*.o
-*.exe
-*.out
-
 # IDE/Editor
 .vscode/
 .idea/
