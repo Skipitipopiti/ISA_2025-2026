@@ -1,4 +1,4 @@
-create_clock -name MY_CLK -period 2.99 clk_i
+create_clock -name MY_CLK -period 3.30 clk_i
 set_dont_touch_network MY_CLK
 set_clock_uncertainty 0.07 [get_clocks MY_CLK]
 set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk_i]
