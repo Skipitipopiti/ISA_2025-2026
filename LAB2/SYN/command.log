@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version S-2021.06-SP4 for linux64 -- Nov 23, 2021
-#@ # Date:   Mon Nov 10 16:01:28 2025
+#@ # Date:   Mon Nov 10 16:56:03 2025
 #@ # Run by: isa31_2025_2026@isaserver
 #@ 
 
@@ -44395,51 +44395,4 @@ gui_start
 #@ # -- End source /eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/auxx/tcllib/lib/iwidgets4.1/watch.itk
 
 gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {LeafCells}
-source scripts/setup.tcl
-#@ # -- Starting source scripts/setup.tcl
-
-#@ 
-#@ define_design_lib WORK -path ./work
-#@ set search_path [list . /eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn /eda/dk/nangate45/synopsys ]
-#@ set link_library [list "*" "NangateOpenCellLibrary_typical_ecsm.db" "dw_foundation.sldb" ]
-#@ set target_library [list "NangateOpenCellLibrary_typical_ecsm.db" ]
-#@ set synthetic_library [list "dw_foundation.sldb" ]
-#@ # -- End source scripts/setup.tcl
-
-source scripts/reading_source_files.tcl
-#@ # -- Starting source scripts/reading_source_files.tcl
-
-#@ analyze -f sverilog -lib WORK {../cvfpu_lite/src/cf_math_pkg.sv ../cvfpu_lite/src/lzc.sv ../cvfpu_lite/src/rr_arb_tree.sv ../cvfpu_lite/src/fpnew_pkg.sv ../cvfpu_lite/src/fpnew_classifier.sv ../cvfpu_lite/src/fpnew_rounding.sv ../cvfpu_lite/src/fpnew_fma.sv ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv ../cvfpu_lite/src/fpnew_opgroup_block.sv ../cvfpu_lite/src/fpnew_top.sv  }
-#@ set power_preserve_rtl_hier_names true
-#@ elaborate fpnew_top -lib WORK
-#@ 
-#@ # -- End source scripts/reading_source_files.tcl
-
-source scripts/applying_costraints_fmax.tcl
-#@ # -- Starting source scripts/applying_costraints_fmax.tcl
-
-#@ create_clock -name MY_CLK -period 3.30 clk_i
-#@ set_dont_touch_network MY_CLK
-#@ set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-#@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk_i]
-#@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-#@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
-#@ set_load $OLOAD [all_outputs]
-#@ # -- End source scripts/applying_costraints_fmax.tcl
-
-compile
-report_time
-report_timing
-report_timing > report/fmax_met.txt
-report_area > report/area_fmax.txt
-source scripts/createNet_fmax_sdf.tcl
-#@ # -- Starting source scripts/createNet_fmax_sdf.tcl
-
-#@ ungroup -all -flatten
-#@ change_names -hierarchy -rules verilog
-#@ write_sdf ../netlist/fpnew_top_fmax.sdf
-#@ write -f verilog -hierarchy -output ../netlist/fpnew_top_fmax.v
-#@ write_sdc ../netlist/fpnew_top_fmax.sdc
-#@ # -- End source scripts/createNet_fmax_sdf.tcl
-
 quit
