@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version S-2021.06-SP4 for linux64 -- Nov 23, 2021
-#@ # Date:   Sun Nov  9 16:59:57 2025
+#@ # Date:   Mon Nov 10 15:38:19 2025
 #@ # Run by: isa31_2025_2026@isaserver
 #@ 
 
@@ -44409,18 +44409,24 @@ source scripts/setup.tcl
 source scripts/reading_source_files.tcl
 #@ # -- Starting source scripts/reading_source_files.tcl
 
-#@ analyze -f vhdl -lib WORK {../src/filter_core.vhd ../src/FF.vhd ../src/regn_s.vhd}
+#@ analyze -f sverilog -lib WORK {../cvfpu_lite/src/cf_math_pkg.sv ../cvfpu_lite/src/lzc.sv ../cvfpu_lite/src/rr_arb_tree.sv ../cvfpu_lite/src/fpnew_pkg.sv ../cvfpu_lite/src/fpnew_classifier.sv ../cvfpu_lite/src/fpnew_rounding.sv ../cvfpu_lite/src/fpnew_fma.sv ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv ../cvfpu_lite/src/fpnew_opgroup_block.sv ../cvfpu_lite/src/fpnew_top.sv  }
 #@ set power_preserve_rtl_hier_names true
-#@ elaborate filter_core -arch beh -lib WORK
-#@ # -- End source scripts/reading_source_files.tcl
-
-source scripts/reading_source_files.tcl
-#@ # -- Starting source scripts/reading_source_files.tcl
-
-#@ analyze -f vhdl -lib WORK {../cvfpu_lite/src/cf_math_pkg.sv ../cvfpu_lite/src/lzc.sv ../cvfpu_lite/src/rr_arb_tree.sv ../cvfpu_lite/src/fpnew_pkg.sv ../cvfpu_lite/src/fpnew_classifier.sv ../cvfpu_lite/src/fpnew_rounding.sv ../cvfpu_lite/src/fpnew_fma.sv ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv ../cvfpu_lite/src/fpnew_opgroup_block.sv ../cvfpu_lite/src/fpnew_top.sv  }
-#@ set power_preserve_rtl_hier_names true
-#@ elaborate fpnew_top -arch beh -lib WORK
+#@ elaborate fpnew_top -lib WORK
 #@ 
 #@ # -- End source scripts/reading_source_files.tcl
 
+source scripts/applying_costraints_fmax.tcl
+#@ # -- Starting source scripts/applying_costraints_fmax.tcl
+
+#@ create_clock -name MY_CLK -period 2.99 clk_i
+#@ set_dont_touch_network MY_CLK
+#@ set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+#@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk_i]
+#@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+#@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+#@ set_load $OLOAD [all_outputs]
+#@ # -- End source scripts/applying_costraints_fmax.tcl
+
+compile
+report_timing
 quit

@@ -14,7 +14,7 @@
 # //
 do scripts/sim_rtl.do
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:28 on Nov 09,2025
+# Start time: 15:05:55 on Nov 10,2025
 # vcom -reportprogress 300 -work ./work ../cvfpu_lite/tb/clk_gen.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -23,10 +23,10 @@ do scripts/sim_rtl.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity clk_gen
 # -- Compiling architecture beh of clk_gen
-# End time: 15:19:29 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:05:56 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:30 on Nov 09,2025
+# Start time: 15:06:01 on Nov 10,2025
 # vcom -reportprogress 300 -work ./work ../cvfpu_lite/tb/data_gen16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -35,19 +35,19 @@ do scripts/sim_rtl.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity data_gen16
 # -- Compiling architecture beh of data_gen16
-# End time: 15:19:31 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:02 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:32 on Nov 09,2025
+# Start time: 15:06:07 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/cf_math_pkg.sv 
 # -- Compiling package cf_math_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:19:33 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:08 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:33 on Nov 09,2025
+# Start time: 15:06:12 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/lzc.sv 
 # -- Compiling module lzc
 # -- Importing package cf_math_pkg
@@ -57,28 +57,28 @@ do scripts/sim_rtl.do
 # 
 # Top level modules:
 # 	lzc
-# End time: 15:19:34 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:13 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 3
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:35 on Nov 09,2025
+# Start time: 15:06:15 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/rr_arb_tree.sv 
 # -- Compiling module rr_arb_tree
 # 
 # Top level modules:
 # 	rr_arb_tree
-# End time: 15:19:36 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:16 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:36 on Nov 09,2025
+# Start time: 15:06:17 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_pkg.sv 
 # -- Compiling package fpnew_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 15:19:37 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:18 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:37 on Nov 09,2025
+# Start time: 15:06:18 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_classifier.sv 
 # -- Compiling module fpnew_classifier
 # -- Importing package fpnew_pkg
@@ -103,20 +103,20 @@ do scripts/sim_rtl.do
 # 
 # Top level modules:
 # 	fpnew_classifier
-# End time: 15:19:38 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:19 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 18
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:40 on Nov 09,2025
+# Start time: 15:06:23 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_rounding.sv 
 # -- Compiling module fpnew_rounding
 # -- Importing package fpnew_pkg
 # 
 # Top level modules:
 # 	fpnew_rounding
-# End time: 15:19:41 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:24 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:41 on Nov 09,2025
+# Start time: 15:06:25 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_fma.sv 
 # -- Compiling module fpnew_fma
 # -- Importing package fpnew_pkg
@@ -124,10 +124,10 @@ do scripts/sim_rtl.do
 # 
 # Top level modules:
 # 	fpnew_fma
-# End time: 15:19:42 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:26 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:43 on Nov 09,2025
+# Start time: 15:06:30 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv 
 # -- Compiling module fpnew_opgroup_fmt_slice
 # -- Importing package fpnew_pkg
@@ -138,10 +138,10 @@ do scripts/sim_rtl.do
 # 
 # Top level modules:
 # 	fpnew_opgroup_fmt_slice
-# End time: 15:19:43 on Nov 09,2025, Elapsed time: 0:00:00
+# End time: 15:06:30 on Nov 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:44 on Nov 09,2025
+# Start time: 15:06:33 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_opgroup_block.sv 
 # -- Compiling module fpnew_opgroup_block
 # -- Importing package fpnew_pkg
@@ -150,10 +150,10 @@ do scripts/sim_rtl.do
 # 
 # Top level modules:
 # 	fpnew_opgroup_block
-# End time: 15:19:45 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:34 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 2
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:45 on Nov 09,2025
+# Start time: 15:06:36 on Nov 10,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_top.sv 
 # -- Compiling module fpnew_top
 # -- Importing package fpnew_pkg
@@ -164,20 +164,20 @@ do scripts/sim_rtl.do
 # 
 # Top level modules:
 # 	fpnew_top
-# End time: 15:19:46 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:37 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 4
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:19:47 on Nov 09,2025
+# Start time: 15:06:38 on Nov 10,2025
 # vlog -reportprogress 300 -sv -work ./work ../cvfpu_lite/tb/tb_fpnew_top_rtl.sv 
 # -- Compiling module tb_fpnew_top_rtl
 # -- Importing package fpnew_pkg
 # 
 # Top level modules:
 # 	tb_fpnew_top_rtl
-# End time: 15:19:48 on Nov 09,2025, Elapsed time: 0:00:01
+# End time: 15:06:39 on Nov 10,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -t ps work.tb_fpnew_top_rtl -voptargs="+acc" 
-# Start time: 15:19:48 on Nov 09,2025
+# Start time: 15:06:41 on Nov 10,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: ../cvfpu_lite/src/fpnew_fma.sv(31): (vopt-13314) Defaulting port 'operands_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # ** Warning: ../cvfpu_lite/src/fpnew_top.sv(30): (vopt-13314) Defaulting port 'operands_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -220,205 +220,5 @@ do scripts/sim_rtl.do
 # Loading ieee.std_logic_unsigned(body)
 # Loading work.clk_gen(beh)#1
 # Loading work.data_gen16(beh)#1
-quit -sim
-# End time: 15:22:32 on Nov 09,2025, Elapsed time: 0:02:44
+# End time: 15:11:11 on Nov 10,2025, Elapsed time: 0:04:30
 # Errors: 0, Warnings: 12
-do scripts/sim_rtl.do
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:41 on Nov 09,2025
-# vcom -reportprogress 300 -work ./work ../cvfpu_lite/tb/clk_gen.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity clk_gen
-# -- Compiling architecture beh of clk_gen
-# End time: 15:22:42 on Nov 09,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:43 on Nov 09,2025
-# vcom -reportprogress 300 -work ./work ../cvfpu_lite/tb/data_gen16.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity data_gen16
-# -- Compiling architecture beh of data_gen16
-# End time: 15:22:43 on Nov 09,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:44 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/cf_math_pkg.sv 
-# -- Compiling package cf_math_pkg
-# 
-# Top level modules:
-# 	--none--
-# End time: 15:22:45 on Nov 09,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:45 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/lzc.sv 
-# -- Compiling module lzc
-# -- Importing package cf_math_pkg
-# ** Warning: ../cvfpu_lite/src/lzc.sv(66): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/lzc.sv(66): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/lzc.sv(67): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# 
-# Top level modules:
-# 	lzc
-# End time: 15:22:46 on Nov 09,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 3
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:46 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/rr_arb_tree.sv 
-# -- Compiling module rr_arb_tree
-# 
-# Top level modules:
-# 	rr_arb_tree
-# End time: 15:22:46 on Nov 09,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:47 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_pkg.sv 
-# -- Compiling package fpnew_pkg
-# 
-# Top level modules:
-# 	--none--
-# End time: 15:22:47 on Nov 09,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:48 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_classifier.sv 
-# -- Compiling module fpnew_classifier
-# -- Importing package fpnew_pkg
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(22): (vlog-13314) Defaulting port 'operands_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(54): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(55): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(56): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(57): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(58): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(59): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(60): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(61): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(62): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(64): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(65): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(66): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(67): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(68): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(69): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(70): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_classifier.sv(71): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# 
-# Top level modules:
-# 	fpnew_classifier
-# End time: 15:22:48 on Nov 09,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 18
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:50 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_rounding.sv 
-# -- Compiling module fpnew_rounding
-# -- Importing package fpnew_pkg
-# 
-# Top level modules:
-# 	fpnew_rounding
-# End time: 15:22:51 on Nov 09,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:51 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_fma.sv 
-# -- Compiling module fpnew_fma
-# -- Importing package fpnew_pkg
-# ** Warning: ../cvfpu_lite/src/fpnew_fma.sv(31): (vlog-13314) Defaulting port 'operands_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	fpnew_fma
-# End time: 15:22:52 on Nov 09,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:52 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv 
-# -- Compiling module fpnew_opgroup_fmt_slice
-# -- Importing package fpnew_pkg
-# ** Warning: ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv(32): (vlog-13314) Defaulting port 'operands_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# ** Warning: ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv(97): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv(97): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv(98): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# 
-# Top level modules:
-# 	fpnew_opgroup_fmt_slice
-# End time: 15:22:53 on Nov 09,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 4
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:54 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_opgroup_block.sv 
-# -- Compiling module fpnew_opgroup_block
-# -- Importing package fpnew_pkg
-# ** Warning: ../cvfpu_lite/src/fpnew_opgroup_block.sv(34): (vlog-13314) Defaulting port 'operands_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# ** Warning: ../cvfpu_lite/src/fpnew_opgroup_block.sv(35): (vlog-13314) Defaulting port 'is_boxed_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	fpnew_opgroup_block
-# End time: 15:22:54 on Nov 09,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:55 on Nov 09,2025
-# vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_top.sv 
-# -- Compiling module fpnew_top
-# -- Importing package fpnew_pkg
-# ** Warning: ../cvfpu_lite/src/fpnew_top.sv(30): (vlog-13314) Defaulting port 'operands_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# ** Warning: ../cvfpu_lite/src/fpnew_top.sv(105): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_top.sv(105): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../cvfpu_lite/src/fpnew_top.sv(106): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# 
-# Top level modules:
-# 	fpnew_top
-# End time: 15:22:55 on Nov 09,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 4
-# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:22:56 on Nov 09,2025
-# vlog -reportprogress 300 -sv -work ./work ../cvfpu_lite/tb/tb_fpnew_top_rtl.sv 
-# -- Compiling module tb_fpnew_top_rtl
-# -- Importing package fpnew_pkg
-# 
-# Top level modules:
-# 	tb_fpnew_top_rtl
-# End time: 15:22:56 on Nov 09,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -t ps work.tb_fpnew_top_rtl -voptargs="+acc" 
-# Start time: 15:22:57 on Nov 09,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading sv_std.std
-# Loading work.fpnew_pkg(fast)
-# Loading work.tb_fpnew_top_rtl(fast)
-# Loading work.fpnew_top(fast)
-# Loading work.fpnew_opgroup_block(fast)
-# Loading work.fpnew_opgroup_fmt_slice(fast)
-# Loading work.fpnew_fma(fast)
-# Loading work.fpnew_classifier(fast)
-# Loading work.cf_math_pkg(fast)
-# Loading work.lzc(fast)
-# Loading work.fpnew_rounding(fast)
-# Loading work.rr_arb_tree(fast)
-# Loading work.lzc(fast__1)
-# Loading work.fpnew_opgroup_block(fast__1)
-# Loading work.rr_arb_tree(fast__1)
-# Loading work.fpnew_opgroup_block(fast__2)
-# Loading work.rr_arb_tree(fast__2)
-# Loading work.fpnew_opgroup_block(fast__3)
-# Loading work.rr_arb_tree(fast__3)
-# Loading work.rr_arb_tree(fast__4)
-# Loading work.lzc(fast__2)
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.clk_gen(beh)#1
-# Loading work.data_gen16(beh)#1
-# error writing "file19": broken pipe
-# Causality operation skipped due to absence of debug database file
-# End time: 16:24:26 on Nov 09,2025, Elapsed time: 1:01:29
-# Errors: 0, Warnings: 0
