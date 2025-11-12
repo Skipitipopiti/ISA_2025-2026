@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version S-2021.06-SP4 for linux64 -- Nov 23, 2021
-#@ # Date:   Sat Nov  8 21:32:00 2025
+#@ # Date:   Tue Nov 11 15:38:51 2025
 #@ # Run by: isa31_2025_2026@isaserver
 #@ 
 
@@ -44406,15 +44406,36 @@ source scripts/setup.tcl
 #@ set synthetic_library [list "dw_foundation.sldb" ]
 #@ # -- End source scripts/setup.tcl
 
-source scripts/pwr_est_after_saif_conv_pipe_10Tadd_half_fmax_ckg.tcl
-#@ # -- Starting source scripts/pwr_est_after_saif_conv_pipe_10Tadd_half_fmax_ckg.tcl
+source scripts/reading_source_files.tcl
+#@ # -- Starting source scripts/reading_source_files.tcl
 
-#@ read_verilog -netlist ../netlist/filter_core_pipe_10Tadd_half_fmax_ckg.v
-#@ current_design filter_core_pipe_10Tadd
-#@ read_saif -input ../saif/filter_core_pipe_10Tadd_half_fmax_ckg_syn.saif -instance tb_fir_pipe_10Tadd/UUT -unit ns -scale 1
-#@ create_clock -name MY_CLK -period 3.06 clk
-#@ # -- End source scripts/pwr_est_after_saif_conv_pipe_10Tadd_half_fmax_ckg.tcl
+#@ analyze -f vhdl -lib WORK {../src/filter_core.vhd ../src/FF.vhd ../src/regn_s.vhd}
+#@ set power_preserve_rtl_hier_names true
+#@ elaborate filter_core -arch beh -lib WORK
+#@ # -- End source scripts/reading_source_files.tcl
 
-report_power
-report_power > report/power_pipe_10Tadd_half_fmax_ckg.txt
+source scripts/applying_costraints_fmax.tcl
+#@ # -- Starting source scripts/applying_costraints_fmax.tcl
+
+#@ create_clock -name MY_CLK -period 2.22 clk
+#@ set_dont_touch_network MY_CLK
+#@ set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+#@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk]
+#@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+#@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+#@ set_load $OLOAD [all_outputs]
+#@ # -- End source scripts/applying_costraints_fmax.tcl
+
+compile
+report_timing
+source scripts/create_fmax_sdf.tcl
+#@ # -- Starting source scripts/create_fmax_sdf.tcl
+
+#@ ungroup -all -flatten
+#@ change_names -hierarchy -rules verilog
+#@ write_sdf ../netlist/filter_core_fmax.sdf
+#@ write -f verilog -hierarchy -output ../netlist/filter_core_fmax.v
+#@ write_sdc ../netlist/filter_core_fmax.sdc
+#@ # -- End source scripts/create_fmax_sdf.tcl
+
 quit

@@ -32,7 +32,7 @@ end data_maker;
 
 architecture beh of data_maker is
 
-  constant tco           : time := 300 ps; 
+  constant tco           : time := 222 ps; 
   constant N_CYC_END_SIM : integer := 11;
   constant LFSR_INIT     : integer := 1365;  -- seed x Linear Feedback Shift Register
 
