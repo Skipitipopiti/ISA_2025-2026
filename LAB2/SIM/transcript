@@ -14,7 +14,7 @@
 # //
 do scripts/sim_net_ultra.do
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:40:30 on Nov 14,2025
+# Start time: 19:54:18 on Nov 15,2025
 # vcom -reportprogress 300 -work ./work ../cvfpu_lite/tb/clk_gen.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -23,10 +23,10 @@ do scripts/sim_net_ultra.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity clk_gen
 # -- Compiling architecture beh of clk_gen
-# End time: 18:40:32 on Nov 14,2025, Elapsed time: 0:00:02
+# End time: 19:54:19 on Nov 15,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:40:32 on Nov 14,2025
+# Start time: 19:54:20 on Nov 15,2025
 # vcom -reportprogress 300 -work ./work ../cvfpu_lite/tb/data_gen16.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -35,216 +35,167 @@ do scripts/sim_net_ultra.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity data_gen16
 # -- Compiling architecture beh of data_gen16
-# End time: 18:40:33 on Nov 14,2025, Elapsed time: 0:00:01
+# End time: 19:54:21 on Nov 15,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:40:33 on Nov 14,2025
+# Start time: 19:54:21 on Nov 15,2025
 # vlog -reportprogress 300 -work ./work ../netlist/fpnew_top_fmax_ultra.v 
 # -- Compiling module fpnew_top
 # 
 # Top level modules:
 # 	fpnew_top
-# End time: 18:40:35 on Nov 14,2025, Elapsed time: 0:00:02
+# End time: 19:54:22 on Nov 15,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:40:35 on Nov 14,2025
+# Start time: 19:54:22 on Nov 15,2025
 # vlog -reportprogress 300 -work ./work ../cvfpu_lite/src/fpnew_pkg.sv 
 # -- Compiling package fpnew_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 18:40:36 on Nov 14,2025, Elapsed time: 0:00:01
+# End time: 19:54:23 on Nov 15,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:40:36 on Nov 14,2025
+# Start time: 19:54:23 on Nov 15,2025
 # vlog -reportprogress 300 -sv -work ./work ../cvfpu_lite/tb/tb_fpnew_top_net.sv 
 # -- Compiling module tb_fpnew_top_net
 # -- Importing package fpnew_pkg
 # 
 # Top level modules:
 # 	tb_fpnew_top_net
-# End time: 18:40:37 on Nov 14,2025, Elapsed time: 0:00:01
+# End time: 19:54:24 on Nov 15,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -t ps -L /eda/dk/nangate45/verilog/qsim2020.4 -sdftyp "/tb_fpnew_top_net/UUT=../netlist/fpnew_top_fmax_ultra.sdf" work.tb_fpnew_top_net 
-# Start time: 18:40:37 on Nov 14,2025
+# Start time: 19:54:25 on Nov 15,2025
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(378): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__2_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(378): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(381): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__3_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(381): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(390): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__6_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(390): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(393): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__7_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(393): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(396): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__8_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(396): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(399): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__9_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(399): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(402): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__10_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(402): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(405): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__11_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(405): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(408): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__12_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(408): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(411): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__14_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(411): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(414): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__15_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(414): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(420): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__2_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(420): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(423): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__4_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(423): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(429): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__6_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(429): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(456): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__15_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(456): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(459): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__0_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(459): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(462): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__1_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(453): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__14_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(453): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(462): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__2_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(462): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(465): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__2_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(465): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__4_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(465): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(468): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__3_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(468): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(471): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__4_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(471): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__7_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(471): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(474): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__5_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(474): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__8_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(474): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(477): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__6_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(477): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__9_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(477): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(480): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__7_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(480): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__11_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(480): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(483): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__8_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(483): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__12_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(483): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(486): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__10_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(486): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__13_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(486): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(489): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__11_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(489): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__14_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(489): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(492): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__12_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(492): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(495): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__13_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(495): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(498): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__14_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(498): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(504): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__2_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(504): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(507): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__0_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(507): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__5_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(507): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(510): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__1_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(510): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__6_'.  Expected 5, found 4.
 # ** Warning: ../netlist/fpnew_top_fmax_ultra.v(510): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(513): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_q_reg_1__0_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(513): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(522): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_tag_q_reg_1_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(522): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(525): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_spec_res_q_reg_1__exponent__7_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(525): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(561): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__9_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(561): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(563): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__0_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(563): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(565): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__1_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(565): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(567): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__2_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(567): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(570): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__3_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(570): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(573): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__4_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(573): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(576): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__5_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(576): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(579): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__6_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(579): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(582): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__7_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(582): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(585): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__8_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(585): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(591): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_add_shamt_q_reg_1__0_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(591): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(605): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sticky_q_reg_1_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(605): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(610): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__0_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(610): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(613): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__1_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(613): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(616): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__2_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(616): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(619): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__3_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(619): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(622): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__4_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(622): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(625): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__5_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(625): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(628): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__6_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(628): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(631): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__7_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(631): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(634): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__8_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(634): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(637): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_final_sign_q_reg_1_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(637): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(718): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_spec_res_q_reg_1__sign_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(718): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(720): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_spec_stat_q_reg_1__NV_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(720): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(725): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tag_q_reg_1_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(725): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(736): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_valid_q_reg_1_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(736): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(742): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__9_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(742): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(745): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__13_'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(745): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(2325): (vopt-2685) [TFMPC] - Too few port connections for 'U2164'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(2325): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(2425): (vopt-2685) [TFMPC] - Too few port connections for 'U2231'.  Expected 5, found 4.
-# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(2425): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=130.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(588): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__2_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(588): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(590): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__3_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(590): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(592): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__4_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(592): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(606): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__9_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(606): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(608): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_add_shamt_q_reg_1__0_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(608): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(637): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__3_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(637): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(657): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_spec_res_q_reg_1__mantissa__6_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(657): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(659): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_spec_res_q_reg_1__sign_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(659): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(667): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tag_q_reg_1_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(667): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(673): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__6_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(673): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(681): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__15_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(681): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(684): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_tag_q_reg_1_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(684): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(687): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__2_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(687): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(690): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__1_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(690): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(693): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__0_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(693): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(696): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__15_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(696): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(699): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_mod_q_reg_1_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(699): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(702): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__1_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(702): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(705): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__10_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(705): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(765): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__20_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(765): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(768): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__21_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(768): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(786): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__27_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(786): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(789): (vopt-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_final_sign_q_reg_1_'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(789): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(1429): (vopt-2685) [TFMPC] - Too few port connections for 'U1514'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(1429): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(1430): (vopt-2685) [TFMPC] - Too few port connections for 'U1515'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(1430): (vopt-2718) [TFMPC] - Missing connection for port 'S'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(1431): (vopt-2685) [TFMPC] - Too few port connections for 'U1516'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(1431): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(1483): (vopt-2685) [TFMPC] - Too few port connections for 'U1559'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(1483): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(2085): (vopt-2685) [TFMPC] - Too few port connections for 'U2046'.  Expected 4, found 3.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(2085): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(3340): (vopt-2685) [TFMPC] - Too few port connections for 'U3057'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(3340): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(3358): (vopt-2685) [TFMPC] - Too few port connections for 'U3073'.  Expected 5, found 4.
+# ** Warning: ../netlist/fpnew_top_fmax_ultra.v(3358): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=84.
 # Loading sv_std.std
 # Loading work.fpnew_pkg(fast)
 # Loading work.tb_fpnew_top_net(fast)
 # Loading work.fpnew_top(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.DFFR_X1(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.DFFS_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND2_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.BUF_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.OR2_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.NOR2_X2(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND2_X2(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI21_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.CLKBUF_X2(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.MUX2_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI21_X1(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.NAND2_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.XNOR2_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.INV_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.CLKBUF_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.OR4_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.NOR2_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI22_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.NAND3_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.OR3_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.XOR2_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI211_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND3_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND4_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI22_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.NAND4_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND4_X2(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.NOR3_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.NOR3_X4(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.OR3_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.MUX2_X1(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.NAND2_X2(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI221_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.XOR2_X2(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.NOR4_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.FA_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.HA_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI221_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI33_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI222_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND3_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OR2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.BUF_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.XOR2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.NOR2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI211_X1(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.BUF_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.INV_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.INV_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND2_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.CLKBUF_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.XNOR2_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND4_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI211_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI21_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OR3_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI21_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.NAND4_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.NAND3_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.NOR4_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OR3_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.NOR3_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.FA_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.MUX2_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND2_X4(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND3_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OR2_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AND4_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI21_X2(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.HA_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI22_X1(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI222_X1(fast)
-# Loading /eda/dk/nangate45/verilog/qsim2020.4.AOI211_X1(fast)
+# Loading /eda/dk/nangate45/verilog/qsim2020.4.OAI22_X1(fast)
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -253,133 +204,149 @@ do scripts/sim_net_ultra.do
 # Loading work.clk_gen(beh)#1
 # Loading work.data_gen16(beh)#1
 # Loading instances from ../netlist/fpnew_top_fmax_ultra.sdf
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__2_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__2_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 378
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__3_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__3_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 381
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__6_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__6_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 390
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__7_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__7_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 393
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__8_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__8_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 396
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__9_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__9_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 399
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__10_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__10_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 402
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__11_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__11_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 405
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__12_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__12_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 408
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__14_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__14_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 411
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__15_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__15_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 414
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__14_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 453
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__2_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__2_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 420
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__2_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 462
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__4_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__4_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 423
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__6_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__6_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 429
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__15_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__15_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 456
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__0_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__0_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 459
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__1_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 462
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__2_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__2_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 465
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__3_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__3_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 468
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__4_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__4_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 471
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__4_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 465
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__7_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__7_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 471
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__8_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__8_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 474
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__9_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__9_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 477
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__11_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__11_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 480
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__12_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__12_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 483
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__13_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__13_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 486
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__14_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__14_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 489
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__5_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__5_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 474
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__5_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 507
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__6_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__6_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 477
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__7_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__7_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 480
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__8_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__8_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 483
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__10_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__10_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 486
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__11_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__11_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 489
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__12_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__12_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 492
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__13_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__13_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 495
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__14_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__14_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 498
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__2_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__2_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 504
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__0_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__0_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 507
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__1_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 510
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_q_reg_1__0_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_q_reg_1__0_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 513
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_tag_q_reg_1_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_tag_q_reg_1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 522
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_spec_res_q_reg_1__exponent__7_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_spec_res_q_reg_1__exponent__7_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 525
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__2_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__2_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 567
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__3_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__3_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 570
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__4_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__4_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 573
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__5_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__5_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 576
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__6_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__6_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 579
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__7_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__7_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 582
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__8_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_diff_q_reg_1__8_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 585
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__0_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__0_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 610
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__1_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 613
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__2_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__2_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 616
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__3_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__3_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 619
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__4_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__4_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 622
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__5_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__5_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 625
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__6_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__6_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 628
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__7_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__7_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 631
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__8_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__8_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 634
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_final_sign_q_reg_1_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_final_sign_q_reg_1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 637
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__6_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 510
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tag_q_reg_1_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tag_q_reg_1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 725
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tag_q_reg_1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 667
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__6_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__6_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 673
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__15_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__15_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 681
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_tag_q_reg_1_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_tag_q_reg_1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 684
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__2_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__2_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 687
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__1_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 690
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__0_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__0_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 693
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__15_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__15_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 696
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_mod_q_reg_1_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_mod_q_reg_1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 699
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__1_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 702
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__20_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__20_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 765
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__21_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__21_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 768
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__27_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__27_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 786
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_final_sign_q_reg_1_'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_final_sign_q_reg_1_ File: ../netlist/fpnew_top_fmax_ultra.v Line: 789
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'U1515'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/U1515 File: ../netlist/fpnew_top_fmax_ultra.v Line: 1430
 # Loading timing data from ../netlist/fpnew_top_fmax_ultra.sdf
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__3_
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__26_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__17_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__25_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_final_sign_q_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__27_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__4_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__5_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__3_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__1_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__22_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__21_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__20_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__12_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__1_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__11_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__7_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__6_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__10_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__19_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__2_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__23_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__24_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__14_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__13_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__16_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__9_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__15_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__18_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__8_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__3_
 # ** Warning: (vsim-3448) nofile(1974): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__17_
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__4_
 # ** Warning: (vsim-3448) nofile(1974): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__13_
-# ** Warning: (vsim-3448) nofile(1974): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__9_
-# ** Warning: (vsim-3448) nofile(1974): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__4_
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__10_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__1_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_mod_q_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__15_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__0_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__1_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__2_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_tag_q_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__15_
 # ** Warning: (vsim-3448) nofile(1974): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_valid_q_reg_1_
 # ** Warning: (vsim-3448) nofile(1974): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_valid_q_reg_1_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__15_
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__6_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__18_
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_is_boxed_q_reg_1__1_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tag_q_reg_1_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
@@ -391,57 +358,7 @@ do scripts/sim_net_ultra.do
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_spec_res_q_reg_1__mantissa__6_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__27_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__26_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__25_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__24_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__23_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__22_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__21_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__20_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__19_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__16_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__14_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__13_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__12_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__11_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__10_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__9_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__8_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__7_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__6_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__5_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__4_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__3_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__2_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__1_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_sum_q_reg_1__0_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_final_sign_q_reg_1_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_tent_exp_q_reg_1__8_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
@@ -505,11 +422,11 @@ do scripts/sim_net_ultra.do
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__5_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__4_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__3_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__2_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__1_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_exp_prod_q_reg_1__0_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
@@ -521,21 +438,9 @@ do scripts/sim_net_ultra.do
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_mid_pipe_spec_res_q_reg_1__exponent__7_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_tag_q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_mod_q_reg_1_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_q_reg_1__1_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_op_q_reg_1__0_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__1_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__0_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_rnd_mode_q_reg_1__2_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_is_boxed_q_reg_1__1_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__14_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
@@ -546,6 +451,8 @@ do scripts/sim_net_ultra.do
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__11_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__10_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__9_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__8_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
@@ -565,8 +472,6 @@ do scripts/sim_net_ultra.do
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__0_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__15_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__14_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__13_
@@ -575,15 +480,11 @@ do scripts/sim_net_ultra.do
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__11_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__10_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__9_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__8_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__7_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__6_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__1__5_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
@@ -596,6 +497,8 @@ do scripts/sim_net_ultra.do
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__15_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__14_
+# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__13_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__12_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
@@ -613,8 +516,6 @@ do scripts/sim_net_ultra.do
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__5_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__4_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__3_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__2_
@@ -622,9 +523,7 @@ do scripts/sim_net_ultra.do
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__1_
 # ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__0__0_
-# ** Warning: (vsim-3448) nofile(1758): Timing check limit can not be negative. Setting negative check constraint (-54 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net/UUT/gen_operation_groups_0__i_opgroup_block_gen_parallel_slices_4__active_format_i_fmt_slice_gen_num_lanes_0__active_lane_lane_instance_i_fma_inp_pipe_operands_q_reg_1__2__15_
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fpnew_top_net File: ../cvfpu_lite/tb/tb_fpnew_top_net.sv
-# End time: 18:46:08 on Nov 14,2025, Elapsed time: 0:05:31
-# Errors: 0, Warnings: 315
+# End time: 20:02:31 on Nov 15,2025, Elapsed time: 0:08:06
+# Errors: 0, Warnings: 243

@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version S-2021.06-SP4 for linux64 -- Nov 23, 2021
-#@ # Date:   Fri Nov 14 18:31:29 2025
+#@ # Date:   Sat Nov 15 19:41:58 2025
 #@ # Run by: isa31_2025_2026@isaserver
 #@ 
 
@@ -44406,18 +44406,6 @@ source scripts/setup.tcl
 #@ set synthetic_library [list "dw_foundation.sldb" ]
 #@ # -- End source scripts/setup.tcl
 
-source scripts/applying_costraints_fmax.tcl
-#@ # -- Starting source scripts/applying_costraints_fmax.tcl
-
-#@ create_clock -name MY_CLK -period 3.30 clk_i
-#@ set_dont_touch_network MY_CLK
-#@ set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-#@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk_i]
-#@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-#@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
-#@ set_load $OLOAD [all_outputs]
-#@ # -- End source scripts/applying_costraints_fmax.tcl
-
 source scripts/reading_source_files.tcl
 #@ # -- Starting source scripts/reading_source_files.tcl
 
@@ -44427,29 +44415,29 @@ source scripts/reading_source_files.tcl
 #@ 
 #@ # -- End source scripts/reading_source_files.tcl
 
-source scripts/applying_costraints_fmax.tcl
-#@ # -- Starting source scripts/applying_costraints_fmax.tcl
+source scripts/appliying_constrains_ultra.tcl
+#@ # -- Starting source scripts/appliying_constrains_ultra.tcl
 
-#@ create_clock -name MY_CLK -period 3.30 clk_i
+#@ create_clock -name MY_CLK -period 2.55 clk_i
 #@ set_dont_touch_network MY_CLK
 #@ set_clock_uncertainty 0.07 [get_clocks MY_CLK]
 #@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk_i]
 #@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
 #@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
 #@ set_load $OLOAD [all_outputs]
-#@ # -- End source scripts/applying_costraints_fmax.tcl
+#@ # -- End source scripts/appliying_constrains_ultra.tcl
 
 compile_ultra
 report_timing
 report_timing > report/fmax_met_ultra.txt
 report_area > report/area_ultra.txt
-source scripts/createNet_fmax_ultra.tcl
-#@ # -- Starting source scripts/createNet_fmax_ultra.tcl
+source scripts/createNet_ultra.tcl
+#@ # -- Starting source scripts/createNet_ultra.tcl
 
 #@ ungroup -all -flatten
 #@ change_names -hierarchy -rules verilog
 #@ write_sdf ../netlist/fpnew_top_fmax_ultra.sdf
 #@ write -f verilog -hierarchy -output ../netlist/fpnew_top_fmax_ultra.v
-#@ # -- End source scripts/createNet_fmax_ultra.tcl
+#@ # -- End source scripts/createNet_ultra.tcl
 
 quit
