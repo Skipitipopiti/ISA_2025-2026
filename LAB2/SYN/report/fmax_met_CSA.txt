@@ -1,0 +1,102 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fpnew_top
+Version: S-2021.06-SP4
+Date   : Sun Nov 16 18:24:37 2025
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: out_ready_i
+              (input port clocked by MY_CLK)
+  Endpoint: gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/MY_CLK_r_REG73_S1
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpnew_top          5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  out_ready_i (in)                                        0.00       0.50 r
+  U847/ZN (OR2_X1)                                        0.03       0.53 r
+  U1304/ZN (INV_X1)                                       0.02       0.56 f
+  U836/ZN (AND2_X1)                                       0.05       0.60 f
+  U2058/ZN (NOR4_X2)                                      0.10       0.71 r
+  U1181/ZN (NAND3_X2)                                     0.08       0.78 f
+  U1241/ZN (INV_X1)                                       0.08       0.86 r
+  U730/Z (CLKBUF_X2)                                      0.09       0.95 r
+  U897/Z (CLKBUF_X3)                                      0.09       1.05 r
+  U1248/Z (MUX2_X1)                                       0.09       1.13 r
+  U2075/ZN (INV_X1)                                       0.03       1.16 f
+  U1323/ZN (NAND4_X1)                                     0.04       1.20 r
+  U1324/ZN (INV_X1)                                       0.03       1.23 f
+  U1373/ZN (NOR3_X1)                                      0.06       1.29 r
+  add_1_root_add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_287/CI (fpnew_top_DW01_add_8)
+                                                          0.00       1.29 r
+  add_1_root_add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_287/U141/ZN (INV_X1)
+                                                          0.03       1.32 f
+  add_1_root_add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_287/U77/ZN (OAI21_X1)
+                                                          0.05       1.37 r
+  add_1_root_add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_287/U78/ZN (XNOR2_X1)
+                                                          0.06       1.44 r
+  add_1_root_add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_287/SUM[1] (fpnew_top_DW01_add_8)
+                                                          0.00       1.44 r
+  U1374/ZN (INV_X1)                                       0.03       1.47 f
+  U1378/ZN (OAI22_X1)                                     0.07       1.54 r
+  U1121/Z (XOR2_X1)                                       0.07       1.61 r
+  U1112/ZN (NAND2_X1)                                     0.03       1.64 f
+  U1425/ZN (INV_X1)                                       0.03       1.67 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/B[2] (fpnew_top_DW01_sub_6)
+                                                          0.00       1.67 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U97/ZN (INV_X1)
+                                                          0.02       1.70 f
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U119/ZN (NAND2_X1)
+                                                          0.03       1.73 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U96/ZN (INV_X1)
+                                                          0.02       1.75 f
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U72/ZN (AOI21_X1)
+                                                          0.06       1.81 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U134/ZN (OAI21_X1)
+                                                          0.05       1.86 f
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U77/ZN (AOI21_X2)
+                                                          0.06       1.92 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U136/ZN (OAI21_X1)
+                                                          0.04       1.96 f
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U89/ZN (AOI21_X1)
+                                                          0.04       2.00 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U132/ZN (OAI21_X1)
+                                                          0.04       2.04 f
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U138/ZN (AOI21_X1)
+                                                          0.05       2.09 r
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/U82/ZN (INV_X1)
+                                                          0.02       2.11 f
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/MY_CLK_r_REG73_S1/D (DFFR_X1)
+                                                          0.01       2.12 f
+  data arrival time                                                  2.12
+
+  clock MY_CLK (rise edge)                                2.23       2.23
+  clock network delay (ideal)                             0.00       2.23
+  clock uncertainty                                      -0.07       2.16
+  gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_293/MY_CLK_r_REG73_S1/CK (DFFR_X1)
+                                                          0.00       2.16 r
+  library setup time                                     -0.04       2.12
+  data required time                                                 2.12
+  --------------------------------------------------------------------------
+  data required time                                                 2.12
+  data arrival time                                                 -2.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

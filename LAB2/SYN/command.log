@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version S-2021.06-SP4 for linux64 -- Nov 23, 2021
-#@ # Date:   Sat Nov 15 19:41:58 2025
+#@ # Date:   Sun Nov 16 19:29:44 2025
 #@ # Run by: isa31_2025_2026@isaserver
 #@ 
 
@@ -44415,29 +44415,33 @@ source scripts/reading_source_files.tcl
 #@ 
 #@ # -- End source scripts/reading_source_files.tcl
 
-source scripts/appliying_constrains_ultra.tcl
-#@ # -- Starting source scripts/appliying_constrains_ultra.tcl
+source scripts/apply_costrains_PPARCH.tcl
+#@ # -- Starting source scripts/apply_costrains_PPARCH.tcl
 
-#@ create_clock -name MY_CLK -period 2.55 clk_i
+#@ create_clock -name MY_CLK -period 2.35 clk_i
 #@ set_dont_touch_network MY_CLK
 #@ set_clock_uncertainty 0.07 [get_clocks MY_CLK]
 #@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk_i]
 #@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
 #@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
 #@ set_load $OLOAD [all_outputs]
-#@ # -- End source scripts/appliying_constrains_ultra.tcl
+#@ ungroup -all -flatten
+#@ set_implementation DW02_mult/pparch [find cell *mult*]
+#@ # -- End source scripts/apply_costrains_PPARCH.tcl
 
-compile_ultra
+compile
+optimize_registers
 report_timing
-report_timing > report/fmax_met_ultra.txt
-report_area > report/area_ultra.txt
-source scripts/createNet_ultra.tcl
-#@ # -- Starting source scripts/createNet_ultra.tcl
+report_timing > fmax_met_PPARCH.txt
+report_area > area_PPARCH.txt
+report_resources > reosurces_PPARCH.txt
+source scripts/createnet_PPARCH.tcl
+#@ # -- Starting source scripts/createnet_PPARCH.tcl
 
 #@ ungroup -all -flatten
 #@ change_names -hierarchy -rules verilog
-#@ write_sdf ../netlist/fpnew_top_fmax_ultra.sdf
-#@ write -f verilog -hierarchy -output ../netlist/fpnew_top_fmax_ultra.v
-#@ # -- End source scripts/createNet_ultra.tcl
+#@ write_sdf ../netlist/fpnew_top_fmax_PPARCH.sdf
+#@ write -f verilog -hierarchy -output ../netlist/fpnew_top_fmax_PPARCH.v
+#@ # -- End source scripts/createnet_PPARCH.tcl
 
 quit
