@@ -4,10 +4,10 @@ use ieee.numeric_std.all;
 
 entity booth_encoder is
     port(
-        a     : in signed(15 downto 0);
+        a     : in signed(7 downto 0);
         be_in : in unsigned(2 downto 0);
         s     : out std_logic;
-        p     : out signed(16 downto 0)
+        p     : out signed(8 downto 0) -- 9 bits per via dello shift left, l'ultimo p ne ha uno in meno perché non è mai shiftato
     );
 end booth_encoder;
 
