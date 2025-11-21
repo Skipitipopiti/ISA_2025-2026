@@ -6,8 +6,8 @@ entity wallace_tree is
     port(
         p0, p1, p2, p3  : in signed(8 downto 0);
         p4              : in signed(7 downto 0);
-        s               : in std_logic_vector(8 downto 0);
-        sum             : out signed(15 downto 0)  -- scusa..
+        s               : in std_logic_vector(4 downto 0);
+        sum             : out signed(15 downto 0)
     );
 end wallace_tree;
 
