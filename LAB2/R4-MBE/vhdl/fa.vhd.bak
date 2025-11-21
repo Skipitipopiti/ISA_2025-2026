@@ -16,6 +16,6 @@ signal tmp : std_logic;
 
 begin
 	tmp <= a xor b;
-	sum <= cin xor tmp;
+	s <= cin xor tmp;
 	cout <= (a and b) or (cin and (a xor b));
 end structural;
