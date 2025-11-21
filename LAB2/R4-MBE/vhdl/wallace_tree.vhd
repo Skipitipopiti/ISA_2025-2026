@@ -18,7 +18,7 @@ architecture structural of wallace_tree is
             a    : in  std_logic;
             b    : in  std_logic;
             cin  : in  std_logic;
-            s    : out std_logic;
+            sum  : out std_logic;
             cout : out std_logic
         );
     end component;
@@ -55,9 +55,9 @@ architecture structural of wallace_tree is
     
     -- layer 0
     -- operands building
-    s_l0 <= not(s) & s & s & p0; -- first oprd build
-    c_l0 <= '1' & not(s) & p1 & s; -- second oprd build
-    f_l0 <= 1 & not(s) & p2 & s; -- third oprd build
+    s_l0 <= not(s(0)) & s(0) & s(0) & std_logic_vector(p0); -- first oprd build
+    c_l0 <= '1' & not(s(1)) & std_logic_vector(p1) & s(1); -- second oprd build
+    f_l0 <= '1' & not(s(2)) & std_logic_vector(p2) & s(2); -- third oprd build
     
     -- processing
     ha0_l0 : ha port map (
@@ -73,7 +73,7 @@ architecture structural of wallace_tree is
         a    => s_l0(2),
         b    => c_l0(1),
         cin  => f_l0(0),
-        s    => s_l1(2),
+        sum  => s_l1(2),
         cout => c_l1(1)
     );
 
@@ -89,7 +89,7 @@ architecture structural of wallace_tree is
             a    => s_l0(i+4),
             b    => c_l0(i+3),
             cin  => f_l0(i+1),
-            s    => s_l1(i+4),
+            sum  => s_l1(i+4),
             cout => c_l1(i+3)
         );
     end generate;
@@ -103,7 +103,7 @@ architecture structural of wallace_tree is
 
     s_l1(13) <= f_l0(10);  -- direct connection
     s_l1(14) <= f_l0(11);  -- direct connection
-    s_l1(15) <= not(s);    -- padding
+    s_l1(15) <= not(s(3));    -- padding
 
     c_l1(12) <= p3(8);  -- padding
     c_l1(13) <= p4(7);  -- padding
@@ -113,7 +113,7 @@ architecture structural of wallace_tree is
 
     -- operands building
     -- s_l1 end c_l1 come ready from previous layer
-    f_l1 <= p4(6) & p3(7 downto 0) & s; -- third oprd build
+    f_l1 <= p4(6) & std_logic_vector(p3(7 downto 0)) & s(3); -- third oprd build
 
     -- processing
     s_l2(0) <= s_l1(0);  -- direct connection
@@ -138,7 +138,7 @@ architecture structural of wallace_tree is
         a    => s_l1(4),
         b    => c_l1(2),
         cin  => f_l1(0),
-        s    => s_l2(4),
+        sum  => s_l2(4),
         cout => c_l2(2)
     );
 
@@ -154,7 +154,7 @@ architecture structural of wallace_tree is
             a    => s_l1(i+6),
             b    => c_l1(i+4),
             cin  => f_l1(i+1),
-            s    => s_l2(i+6),
+            sum  => s_l2(i+6),
             cout => c_l2(i+4)
         );
     end generate;
@@ -169,7 +169,7 @@ architecture structural of wallace_tree is
     -- layer 2
     -- operands building
     -- s_l2 end c_l2 come ready from previous layer
-    f_l2 <= p4(5 downto 0) & s;
+    f_l2 <= std_logic_vector(p4(5 downto 0)) & s(4);
     
     -- processing
     s_l3(0) <= s_l2(0);  -- direct connection
@@ -198,7 +198,7 @@ architecture structural of wallace_tree is
         a    => s_l2(6),
         b    => c_l2(3),
         cin  => f_l2(0),
-        s    => s_l3(6),
+        sum  => s_l3(6),
         cout => c_l3(4)
     );
 
@@ -214,7 +214,7 @@ architecture structural of wallace_tree is
             a    => s_l2(i+8),
             b    => c_l2(i+5),
             cin  => f_l2(i+1),
-            s    => s_l3(i+8),
+            sum  => s_l3(i+8),
             cout => c_l3(i+6)
         );
     end generate;
@@ -241,19 +241,6 @@ architecture structural of wallace_tree is
     s_add <= unsigned(s_l3(16 downto 3)) + unsigned(c_l3);
     
     -- final result allignment
-    sum <= signed(s_add(12 downto 0) & s_l4);
+    sum <= signed(std_logic_vector(s_add(12 downto 0)) & s_l4);
 
 end structural;
-    
-
-
-
-
-
-
-
-
-
-
-
-        
