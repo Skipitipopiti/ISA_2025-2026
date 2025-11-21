@@ -34,7 +34,7 @@ begin
         wait for 100 ns;
 
         -- test vector 2
-        x_tb <= "11100100"; -- -28
+        x_tb <= "11100100"; -- 228
         a_tb <= "00000011"; -- 3
         wait for 100 ns;
 
@@ -44,8 +44,8 @@ begin
         wait for 100 ns;
 
         -- test vector 4
-        x_tb <= "10000000"; -- -128
-        a_tb <= "10000000"; -- -128
+        x_tb <= "10000000"; -- 128
+        a_tb <= "10000000"; -- 128
         wait for 100 ns;
 
         wait;

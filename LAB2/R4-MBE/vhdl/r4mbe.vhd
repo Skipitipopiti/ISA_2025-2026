@@ -13,7 +13,7 @@ end r4mbe;
 
 architecture structural of r4mbe is
     type vector_be9 is array (0 to 4) of unsigned(2 downto 0);
-    type vector_p_be9 is array (0 to 3) of signed(8 downto 0);
+    type vector_p_be9 is array (0 to 4) of signed(8 downto 0);
 
     signal be_in : vector_be9; -- booth encoder inputs
     signal s_be  : std_logic_vector(4 downto 0); -- booth encoder out sign bits
@@ -33,13 +33,13 @@ architecture structural of r4mbe is
             p0, p1, p2, p3  : in signed(8 downto 0);
             p4              : in signed(7 downto 0);
             s               : in std_logic_vector(4 downto 0);
-            sum             : out signed(15 downto 0)
+            sum             : out unsigned(15 downto 0)
         );
     end component;
 
 begin
     -- triplets generation for booth encoders
-    be_in(4) <= "00" & x(15);
+    be_in(4) <= "00" & x(7);
     be_in(0) <= x(1) & x(0) & '0';
 
     gen_be: for i in 1 to 3 generate
@@ -66,7 +66,7 @@ begin
             p3  => p_be(3),
             p4  => signed(p_be(4)(7 downto 0)), -- last partial product is 8 bits only, seguento bewick.pdf, ho scartato il segno perché è sempre positivo
             s   => s_be(4 downto 0),
-            sum => signed(y)
+            sum => y
         );
 
 end structural;

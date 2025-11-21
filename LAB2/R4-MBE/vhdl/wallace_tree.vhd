@@ -7,7 +7,7 @@ entity wallace_tree is
         p0, p1, p2, p3  : in signed(8 downto 0);
         p4              : in signed(7 downto 0);
         s               : in std_logic_vector(4 downto 0);
-        sum             : out signed(15 downto 0)
+        sum             : out unsigned(15 downto 0) -- la somma è già il prodotto finale, non ci serve che sia signed
     );
 end wallace_tree;
 
@@ -241,6 +241,6 @@ architecture structural of wallace_tree is
     s_add <= unsigned(s_l3(16 downto 3)) + unsigned(c_l3); -- cout viene scartato qui, poi ne scarto un altro dopo per la questione degli Ss
     
     -- final result allignment
-    sum <= signed(std_logic_vector(s_add(12 downto 0)) & s_l4);
+    sum <= unsigned(std_logic_vector(s_add(12 downto 0)) & s_l4);
 
 end structural;

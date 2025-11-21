@@ -12,7 +12,7 @@ entity booth_encoder is
 end booth_encoder;
 
 architecture behavioral of booth_encoder is
-    signal a_n : signed(15 downto 0);
+    signal a_n : signed(7 downto 0);
 begin
     a_n <= not(a);
     process(a, be_in)
