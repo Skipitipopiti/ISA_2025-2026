@@ -12,9 +12,10 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-do scripts/netlist_sim_fmax.do
+# ** Warning: License feature 'msimviewer' will expire in 12 days.
+source scripts/netlist_sim_fmax.do
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:55:04 on Nov 11,2025
+# Start time: 16:37:01 on Nov 18,2025
 # vcom -reportprogress 300 -work ./work ../tb/clk_gen_fmax.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -23,10 +24,10 @@ do scripts/netlist_sim_fmax.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity clk_gen
 # -- Compiling architecture beh of clk_gen
-# End time: 15:55:05 on Nov 11,2025, Elapsed time: 0:00:01
+# End time: 16:37:02 on Nov 18,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:55:06 on Nov 11,2025
+# Start time: 16:37:02 on Nov 18,2025
 # vcom -reportprogress 300 -work ./work ../tb/data_maker_fmax.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -36,10 +37,10 @@ do scripts/netlist_sim_fmax.do
 # -- Loading package std_logic_textio
 # -- Compiling entity data_maker
 # -- Compiling architecture beh of data_maker
-# End time: 15:55:07 on Nov 11,2025, Elapsed time: 0:00:01
+# End time: 16:37:03 on Nov 18,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:55:08 on Nov 11,2025
+# Start time: 16:37:03 on Nov 18,2025
 # vcom -reportprogress 300 -work ./work ../tb/data_sink_fmax.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -49,29 +50,30 @@ do scripts/netlist_sim_fmax.do
 # -- Loading package std_logic_textio
 # -- Compiling entity data_sink
 # -- Compiling architecture beh of data_sink
-# End time: 15:55:09 on Nov 11,2025, Elapsed time: 0:00:01
+# End time: 16:37:04 on Nov 18,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:55:09 on Nov 11,2025
+# Start time: 16:37:04 on Nov 18,2025
 # vlog -reportprogress 300 -work ./work ../netlist/filter_core_fmax.v 
 # -- Compiling module filter_core
 # 
 # Top level modules:
 # 	filter_core
-# End time: 15:55:11 on Nov 11,2025, Elapsed time: 0:00:02
+# End time: 16:37:05 on Nov 18,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:55:11 on Nov 11,2025
+# Start time: 16:37:06 on Nov 18,2025
 # vlog -reportprogress 300 -sv -work ./work ../tb/tb_fir.sv 
 # -- Compiling module tb_fir
 # 
 # Top level modules:
 # 	tb_fir
-# End time: 15:55:12 on Nov 11,2025, Elapsed time: 0:00:01
+# End time: 16:37:07 on Nov 18,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -L /eda/dk/nangate45/verilog/qsim2020.4 work.tb_fir 
-# Start time: 15:55:13 on Nov 11,2025
+# Start time: 16:37:07 on Nov 18,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 12 days.
 # Loading sv_std.std
 # Loading work.tb_fir(fast)
 # Loading work.filter_core(fast)
@@ -110,6 +112,7 @@ do scripts/netlist_sim_fmax.do
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.CLKBUF_X2(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.MUX2_X2(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.OR2_X2(fast)
+# ** Warning: License feature 'msimhdlmix' will expire in 12 days.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -121,11 +124,12 @@ do scripts/netlist_sim_fmax.do
 # Loading ieee.std_logic_textio(body)
 # Loading work.data_maker(beh)#1
 # Loading work.data_sink(beh)#1
-# End time: 15:56:11 on Nov 11,2025, Elapsed time: 0:00:58
+# End time: 16:37:53 on Nov 18,2025, Elapsed time: 0:00:46
 # Errors: 0, Warnings: 1
 # vsim -t ps -L /eda/dk/nangate45/verilog/qsim2020.4 -sdftyp "/tb_fir/UUT=../netlist/filter_core_fmax.sdf" work.tb_fir 
-# Start time: 15:56:11 on Nov 11,2025
+# Start time: 16:37:53 on Nov 18,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Warning: License feature 'msimhdlsim' will expire in 12 days.
 # Loading sv_std.std
 # Loading work.tb_fir(fast)
 # Loading work.filter_core(fast)
@@ -164,6 +168,7 @@ do scripts/netlist_sim_fmax.do
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.CLKBUF_X2(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.MUX2_X2(fast)
 # Loading /eda/dk/nangate45/verilog/qsim2020.4.OR2_X2(fast)
+# ** Warning: License feature 'msimhdlmix' will expire in 12 days.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -595,5 +600,5 @@ do scripts/netlist_sim_fmax.do
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fir/UUT/DIN_REG_Q_reg_3_
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_fir File: ../tb/tb_fir.sv
-# End time: 16:04:51 on Nov 11,2025, Elapsed time: 0:08:40
+# End time: 16:43:51 on Nov 18,2025, Elapsed time: 0:05:58
 # Errors: 0, Warnings: 209
