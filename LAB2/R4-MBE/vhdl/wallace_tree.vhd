@@ -49,7 +49,7 @@ architecture structural of wallace_tree is
     signal c_l3 : std_logic_vector(13 downto 0);   -- l3 cout and final second oprd
 
     signal s_l4 : std_logic_vector(2 downto 0); -- padding for final result
-    signal s_add : unsigned(13 downto 0); -- final result MSBs from beh adder
+    signal s_add : signed(13 downto 0); -- final result MSBs from beh adder
 
     begin
     
@@ -238,7 +238,7 @@ architecture structural of wallace_tree is
     s_l4(0) <= s_l3(0);  -- direct connection
     s_l4(1) <= s_l3(1);  -- direct connection
     s_l4(2) <= s_l3(2);  -- direct connection
-    s_add <= unsigned(s_l3(16 downto 3)) + unsigned(c_l3); -- cout viene scartato qui, poi ne scarto un altro dopo per la questione degli Ss
+    s_add <= signed(s_l3(16 downto 3)) + signed(c_l3); -- cout viene scartato qui, poi ne scarto un altro dopo per la questione degli Ss
     
     -- final result allignment
     sum <= unsigned(std_logic_vector(s_add(12 downto 0)) & s_l4);
