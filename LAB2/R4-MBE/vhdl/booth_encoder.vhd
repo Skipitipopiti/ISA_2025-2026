@@ -24,9 +24,9 @@ begin
             when "001" | "010" =>
                 p <= '0' & a;
             when "011" =>
-                p <= '0' & shift_left(a, 1) ;
+                p <= shift_left(a, 1);
             when "100" =>
-                p <= '1' & shift_left(a_n, 1);
+                p <= shift_left(a_n, 1);
             when "101" | "110" =>
                 p <= '1' & a_n;
             when others =>
