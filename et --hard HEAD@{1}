@@ -1,0 +1,20 @@
+[33mcd01086[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: pull: Fast-forward
+[33m634977b[m HEAD@{1}: commit: no a_n
+[33m7289251[m HEAD@{2}: pull: Fast-forward
+[33m5007a08[m HEAD@{3}: pull: Fast-forward
+[33m14e1524[m HEAD@{4}: commit: fixed r4mbe
+[33m4b81899[m HEAD@{5}: commit: r4mbe.sv added
+[33m8d38045[m HEAD@{6}: pull: Fast-forward
+[33m321ee20[m HEAD@{7}: commit: ha verilgo
+[33m341bb8a[m HEAD@{8}: pull: Fast-forward
+[33me79c7c0[m HEAD@{9}: commit: LAB2/R4-MBE
+[33m3a7cdd9[m HEAD@{10}: pull: Fast-forward
+[33m302317f[m HEAD@{11}: pull: Fast-forward
+[33m405fcc3[m HEAD@{12}: pull: Fast-forward
+[33mf02b5e5[m HEAD@{13}: pull: Fast-forward
+[33mfdac06b[m HEAD@{14}: pull: Fast-forward
+[33m6b71a15[m HEAD@{15}: pull: Merge made by the 'ort' strategy.
+[33m5618417[m HEAD@{16}: commit: netlist script added
+[33mbf89e92[m HEAD@{17}: pull: Fast-forward
+[33m768405f[m HEAD@{18}: commit: added gitignore
+[33m8b59b95[m HEAD@{19}: commit (initial): reboot repo
