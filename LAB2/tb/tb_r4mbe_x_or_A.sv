@@ -1,3 +1,5 @@
+// test vari
+
 `timescale 1ns/1ps
 
 module tb_r4mbe_x_or_A;
