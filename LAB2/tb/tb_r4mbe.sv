@@ -14,6 +14,23 @@ module tb_r4mbe;
         .y(y_tb)
     );
 
+
+    initial begin
+        logic [7:0] x_val, a_val;
+
+        // loop da 128 a 255
+        for (int i = 128; i <= 255; i++) begin
+            x_val = i[7:0];
+            a_val = i[7:0];   // stessa sequenza per A
+            x_tb = x_val;
+            a_tb = a_val;
+            #100;  // attendi 100 ns tra i test
+        end
+
+        $stop;
+    end
+
+    /*
     // processo di stimolo
     initial begin
         // test vector 1
@@ -63,6 +80,7 @@ module tb_r4mbe;
 
         $stop; // ferma la simulazione
     end
+    */
 
 endmodule
 
