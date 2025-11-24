@@ -20,8 +20,8 @@ module tb_r4mbe;
         // prefisso fisso: 100011xx
         logic [7:3] prefix = 5'b10001;
 
-        // test tripletta LSB = 001,010,011,100,101
-        for (int lsb = 3'b001; lsb <= 3'b101; lsb++) begin
+        // loop su tutti i 3 LSB: 000,001,010,011,100,101,110,111
+        for (int lsb = 3'b000; lsb <= 3'b111; lsb++) begin
             x_val = {prefix, lsb}; // combina prefisso + LSB
             x_tb = x_val;
             a_tb = a_val;
@@ -42,6 +42,7 @@ module tb_r4mbe;
     end
 
 endmodule
+
 
 
 
