@@ -204,7 +204,7 @@ module wallace_tree (
         end
     endgenerate
 
-    assign s_l3[16] = 1'b0; // to prepare final addition
+    s_l3[16] = 1'b0; // to prepare final addition
 
     // LAYER 3 (Final Addition)
     assign s_l4[0] = s_l3[0];

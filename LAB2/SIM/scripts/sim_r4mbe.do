@@ -23,4 +23,4 @@ add wave *
 #add wave -position insertpoint /tb_r4mbe/uut/wt_inst/c_l1
 #add wave -position insertpoint /tb_r4mbe/uut/wt_inst/f_l1
 
-run 450 ns
+run 2 us

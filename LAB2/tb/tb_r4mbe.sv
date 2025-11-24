@@ -36,7 +36,43 @@ module tb_r4mbe;
         a_tb = 8'b10000000; // 128
         #100;
 
+		// test vector 5
+		x_tb = 8'b00000001; // 1
+		a_tb = 8'b11111111; //255
+		#100;
+		
+		// test vector 6
+		x_tb = 8'b10101010; // 170
+		a_tb = 8'b01010101; // 85
+		#100;
+
+		// test vector 7
+		x_tb = 8'b11111111; // 255
+		a_tb = 8'b11111111; // 255
+		#100;
+
+		// test vector 8
+		x_tb = 8'b00001111; // 15
+		a_tb = 8'b00110011; // 51
+		#100;
+
+		// test vector 9
+		x_tb = 8'b10011001; // 153
+		a_tb = 8'b00001111; // 15
+		#100;
+
         $stop; // ferma la simulazione
     end
 
 endmodule
+
+
+
+
+
+
+
+
+
+
+
