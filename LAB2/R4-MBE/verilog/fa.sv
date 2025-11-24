@@ -1,9 +1,9 @@
 module fa (
-	input logic a;
-	input logic b;
-    input logic cin;
-    output logic sum;
-    output logic cout;
+	  input logic a,
+	  input logic b,
+    input logic cin,
+    output logic sum,
+    output logic cout
 );
 
     logic tmp;
