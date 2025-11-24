@@ -17,8 +17,6 @@ output logic signed [8:0] p
 
 // bitwise not of `a` (equivalent to VHDL `not(a)`).
 // Keep as signed; bitwise inversion is well-defined here.
-logic signed [7:0] a_n;
-assign a_n = ~a;
 
 
 // sign bit output (msb of be_in in the VHDL version)
@@ -31,8 +29,8 @@ unique case (be_in)
 3'b000, 3'b111: p = 9'b0;
 3'b001, 3'b010: p = {1'b0, a}; // concatenation -> '0' & a
 3'b011 : p = {a, 1'b0}; // a << 1 (LSB = 0)
-3'b100 : p = {a_n, 1'b1}; // a_n << 1 (LSB = 1)
-3'b101, 3'b110: p = {1'b1, a_n}; // '1' & a_n
+3'b100 : p = ~{a, 1'b0}; // a_n << 1 (LSB = 1)
+3'b101, 3'b110: p = ~{1'b0, a}; // '1' & a_n
 default : p = 9'b0;
 endcase
 end
