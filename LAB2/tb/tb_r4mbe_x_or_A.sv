@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tb_r4mbe;
+module tb_r4mbe_x_or_A;
 
     // segnali del testbench
     logic [7:0]  x_tb;
