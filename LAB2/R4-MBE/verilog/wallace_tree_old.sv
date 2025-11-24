@@ -16,14 +16,14 @@ module wallace_tree (
     logic [11:0] f_l0;  // l1 third oprd
 
     // layer 1 signals
-    logic [13:0] s_l1;   // l1 sum output and l2 first oprd
-    logic [12:0] c_l1;   // l1 cout and l2 second oprd
-    logic [10:0]  f_l1;   // l1 third oprd
+    logic [15:0] s_l1;   // l1 sum output and l2 first oprd
+    logic [13:0] c_l1;   // l1 cout and l2 second oprd
+    logic [9:0]  f_l1;   // l2 third oprd
 
     // layer 2 signals
     logic [15:0] s_l2;   // l2 sum ouput and l3 first oprd
-    logic [12:0] c_l2;   // l2 cout and l3 second oprd
-    logic [8:0]  f_l2;   // l2 third oprd
+    logic [13:0] c_l2;   // l2 cout and l3 second oprd
+    logic [6:0]  f_l2;   // l3 third oprd
     
     // layer 3 signals
     logic [16:0] s_l3;   // l3 sum output and final first oprd
@@ -37,8 +37,8 @@ module wallace_tree (
 
     // LAYER 0
     assign s_l0 = {~s[0], s[0], s[0], p0}; 
-    assign c_l0 = {1'b1, ~s[1], p1, s[0]};
-    assign f_l0 = {1'b1, ~s[2], p2, s[1]};
+    assign c_l0 = {1'b1, ~s[1], p1, s[1]};
+    assign f_l0 = {1'b1, ~s[2], p2, s[2]};
     
     // processing
     ha ha0_l0 (
@@ -62,7 +62,7 @@ module wallace_tree (
         .a    (s_l0[3]),
         .b    (c_l0[2]),
         .sum  (s_l1[3]),
-        .co   (c_l1[2])
+        .co   (c_l1[2]) // Verifica nome porta
     );
 
     generate
@@ -84,17 +84,19 @@ module wallace_tree (
         .co   (c_l1[11])
     );
 
-    assign s_l1[13] = f_l0[10];   
+    assign s_l1[13] = f_l0[10]; 
+    assign s_l1[14] = f_l0[11]; 
+    assign s_l1[15] = ~s[3];    
 
-    assign c_l1[12] = f_l0[11];  
-
+    assign c_l1[12] = p3[8];  
+    assign c_l1[13] = p4[7];  
 
     // LAYER 1
     // s_l1 and c_l1 come ready from previous layer
-    assign f_l1 = {~s[3], p3, s[2]}; 
+    assign f_l1 = {p4[6], p3[7:0], s[3]}; 
 
     // processing
-    assign s_l2[0] = s_l1[0]; 
+    assign s_l2[0] = s_l1[0];  
     
     ha ha0_l1 (
         .a    (s_l1[1]),
@@ -128,7 +130,7 @@ module wallace_tree (
     );
     
     generate
-        for (i = 0; i < 8; i=i+1) begin : fa_1to8_l1
+        for (i = 0; i < 9; i=i+1) begin : fa_1to9_l1
             fa fa_g_l1 (
                 .a    (s_l1[i+6]),
                 .b    (c_l1[i+4]),
@@ -140,17 +142,14 @@ module wallace_tree (
     endgenerate
 
     ha ha3_l1 (
-        .a    (c_l1[12]),
-        .b    (f_l1[9]),
-        .sum  (s_l2[14]),
-        .co   (c_l2[12])
+        .a    (s_l1[15]),
+        .b    (c_l1[13]),
+        .sum  (s_l2[15]),
+        .co   (c_l2[13])
     );
 
-    assign s_l2[15] = f_l1[10];
-
     // LAYER 2
-    // s_l2 and c_l2 come ready from previous layer
-    assign f_l2 = {p4, s[3]}; 
+    assign f_l2 = {p4[5:0], s[4]}; 
     
     // processing
     assign s_l3[0] = s_l2[0];  
@@ -164,7 +163,7 @@ module wallace_tree (
     );
 
     assign s_l3[3] = s_l2[3];  
-    assign c_l3[1] = 1'b0; // to prepare final addition     
+    assign c_l3[1] = 1'b0;       
 
     generate
         for (i = 0; i < 2; i=i+1) begin : ha_1to2_l2
@@ -193,7 +192,7 @@ module wallace_tree (
     );
 
     generate
-        for (i = 0; i < 8; i=i+1) begin : fa_1to8_l2
+        for (i = 0; i < 6; i=i+1) begin : fa_1to6_l2
             fa fa_g_l2 (
                 .a    (s_l2[i+8]),
                 .b    (c_l2[i+5]),
@@ -204,10 +203,21 @@ module wallace_tree (
         end
     endgenerate
 
-    s_l3[16] = 1'b0; // to prepare final addition
+    generate
+        for (i=0; i<2; i=i+1) begin : ha_4to5_l2
+            ha ha_g_l2 (
+                .a    (s_l2[i+14]),
+                .b    (c_l2[i+11]),
+                .sum  (s_l3[i+14]),
+                .co   (c_l3[i+12])
+            );
+        end
+    endgenerate
+
+    assign s_l3[16] = c_l2[13];    
 
     // LAYER 3 (Final Addition)
-    assign s_l4[0] = s_l3[0];
+    assign s_l4[0] = s_l3[0];  
     assign s_l4[1] = s_l3[1];  
     assign s_l4[2] = s_l3[2];  
     
