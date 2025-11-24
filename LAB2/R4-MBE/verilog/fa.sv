@@ -6,10 +6,10 @@ module fa (
     output logic cout;
 );
 
-logic tmp;
+    logic tmp;
 
-always_comb begin
-    tmp = a ^ b;
-    sum = cin ^ tmp;
-    cout = (a & b) | (cin & (a ^ b));
-end
+    assign tmp = a ^ b;
+    assign sum = cin ^ tmp;
+    assign cout = (a & b) | (cin & (a ^ b));
+
+endmodule
