@@ -13,14 +13,11 @@ module tb_r4mbe;
     );
 
     initial begin
-        logic [7:0] x_val;
         logic [7:0] a_val = 8'd3;       // fisso A=3
-        logic [4:0] prefix = 5'b10001;  // prefisso fisso
         logic [15:0] expected;
 
-        // loop su tutti i 3 LSB: 000..111
-        for (int lsb = 3'b000; lsb <= 3'b111; lsb++) begin
-            x_val = {prefix, lsb}; // combina prefisso (5 bit) + LSB (3 bit)
+        // parte da 8'b10001000 (esempio: 136 dec) e incrementa fino a 143 (10001111)
+        for (int x_val = 8'b10001000; x_val <= 8'b10001111; x_val++) begin
             x_tb = x_val;
             a_tb = a_val;
             #100;
@@ -40,6 +37,7 @@ module tb_r4mbe;
     end
 
 endmodule
+
 
 
 
