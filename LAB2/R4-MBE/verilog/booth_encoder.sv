@@ -11,11 +11,12 @@ module booth_encoder (
   
   always_comb begin
     unique case (be_in)
-      3'b000, 3'b111: p = 9'b0;
+      3'b000: p = 9'b0;
       3'b001, 3'b010: p = {1'b0, a};  // concatenation -> '0' & a
       3'b011 : p = {a, 1'b0};         // a << 1 (LSB = 0)
       3'b100 : p = ~{a, 1'b0};        // a_n << 1 (LSB = 1)
       3'b101, 3'b110: p = ~{1'b0, a}; // '1' & a_n
+      3'b111 : p = 9'b1;
       default : p = 9'b0;
     endcase
   end
