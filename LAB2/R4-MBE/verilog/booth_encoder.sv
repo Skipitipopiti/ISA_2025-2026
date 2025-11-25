@@ -16,7 +16,7 @@ module booth_encoder (
       3'b011 : p = {a, 1'b0};         // a << 1 (LSB = 0)
       3'b100 : p = ~{a, 1'b0};        // a_n << 1 (LSB = 1)
       3'b101, 3'b110: p = ~{1'b0, a}; // '1' & a_n
-      3'b111 : p = 9'b1;
+      3'b111 : p = 9'b111111111;
       default : p = 9'b0;
     endcase
   end
