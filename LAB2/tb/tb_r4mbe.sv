@@ -1,3 +1,5 @@
+// combinazioni 1000xxxx
+
 `timescale 1ns/1ps
 
 module tb_r4mbe;
