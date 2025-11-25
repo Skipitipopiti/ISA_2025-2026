@@ -1,6 +1,4 @@
-// combinazioni 1000xxxx
-
-`timescale 1ns/1ps
+'timescale 1ns/1ps
 
 module tb_r4mbe;
 
@@ -8,7 +6,6 @@ module tb_r4mbe;
     logic [7:0]  a_tb;
     logic [15:0] y_tb;
 
-    // DUT
     r4mbe uut(
         .x(x_tb),
         .a(a_tb),
@@ -16,34 +13,56 @@ module tb_r4mbe;
     );
 
     initial begin
-        logic [7:0] a_val = 8'd3;
+        logic [7:0] base142 = 8'd142; // 10001110
+        logic [7:0] base143 = 8'd143; // 10001111
+        logic [7:0] modified;
         logic [15:0] expected;
+        logic [7:0] A = 8'd3;
+
+        // -----------------------------------------
+        //   TEST PER 142
+        // -----------------------------------------
+        $display("\n--- TEST 142 ---");
+
+        for (int b = 0; b < 8; b++) begin
+            modified = base142 ^ (8'b1 << b);   // NOT del bit b
+            x_tb = modified;
+            a_tb = A;
+            #50;
+
+            expected = modified * A;
+
+            if (y_tb !== expected)
+                $display("Mismatch (bit %0d nottato): x=%b (%0d), expected=%0d, actual=%0d",
+                         b, modified, modified, expected, y_tb);
+            else
+                $display("OK (bit %0d nottato): x=%b (%0d)", b, modified, modified);
+        end
 
 
-        // ------- combinazioni 1000xxx0 -------
-        x_tb = 8'b10000000; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000010; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000100; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000110; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001000; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001010; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001100; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001110; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
+        // -----------------------------------------
+        //   TEST PER 143
+        // -----------------------------------------
+        $display("\n--- TEST 143 ---");
 
+        for (int b = 0; b < 8; b++) begin
+            modified = base143 ^ (8'b1 << b);   // NOT del bit b
+            x_tb = modified;
+            a_tb = A;
+            #50;
 
-        // ------- combinazioni 1000xxx1 -------
-        x_tb = 8'b10000001; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000011; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000101; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000111; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001001; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001011; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001101; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001111; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
+            expected = modified * A;
 
+            if (y_tb !== expected)
+                $display("Mismatch (bit %0d nottato): x=%b (%0d), expected=%0d, actual=%0d",
+                        b, modified, modified, expected, y_tb);
+            else
+                $display("OK (bit %0d nottato): x=%b (%0d)", b, modified, modified);
+        end
 
-        $display("Test completato");
+        $display("\nTest completo.\n");
         $stop;
     end
 
 endmodule
+
