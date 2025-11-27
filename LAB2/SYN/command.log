@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version S-2021.06-SP4 for linux64 -- Nov 23, 2021
-#@ # Date:   Sun Nov 16 19:29:44 2025
+#@ # Date:   Thu Nov 27 19:28:03 2025
 #@ # Run by: isa31_2025_2026@isaserver
 #@ 
 
@@ -44395,53 +44395,3 @@ gui_start
 #@ # -- End source /eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/auxx/tcllib/lib/iwidgets4.1/watch.itk
 
 gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {LeafCells}
-source scripts/setup.tcl
-#@ # -- Starting source scripts/setup.tcl
-
-#@ 
-#@ define_design_lib WORK -path ./work
-#@ set search_path [list . /eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn /eda/dk/nangate45/synopsys ]
-#@ set link_library [list "*" "NangateOpenCellLibrary_typical_ecsm.db" "dw_foundation.sldb" ]
-#@ set target_library [list "NangateOpenCellLibrary_typical_ecsm.db" ]
-#@ set synthetic_library [list "dw_foundation.sldb" ]
-#@ # -- End source scripts/setup.tcl
-
-source scripts/reading_source_files.tcl
-#@ # -- Starting source scripts/reading_source_files.tcl
-
-#@ analyze -f sverilog -lib WORK {../cvfpu_lite/src/cf_math_pkg.sv ../cvfpu_lite/src/lzc.sv ../cvfpu_lite/src/rr_arb_tree.sv ../cvfpu_lite/src/fpnew_pkg.sv ../cvfpu_lite/src/fpnew_classifier.sv ../cvfpu_lite/src/fpnew_rounding.sv ../cvfpu_lite/src/fpnew_fma.sv ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv ../cvfpu_lite/src/fpnew_opgroup_block.sv ../cvfpu_lite/src/fpnew_top.sv  }
-#@ set power_preserve_rtl_hier_names true
-#@ elaborate fpnew_top -lib WORK
-#@ 
-#@ # -- End source scripts/reading_source_files.tcl
-
-source scripts/apply_costrains_PPARCH.tcl
-#@ # -- Starting source scripts/apply_costrains_PPARCH.tcl
-
-#@ create_clock -name MY_CLK -period 2.35 clk_i
-#@ set_dont_touch_network MY_CLK
-#@ set_clock_uncertainty 0.07 [get_clocks MY_CLK]
-#@ set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] clk_i]
-#@ set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
-#@ set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
-#@ set_load $OLOAD [all_outputs]
-#@ ungroup -all -flatten
-#@ set_implementation DW02_mult/pparch [find cell *mult*]
-#@ # -- End source scripts/apply_costrains_PPARCH.tcl
-
-compile
-optimize_registers
-report_timing
-report_timing > fmax_met_PPARCH.txt
-report_area > area_PPARCH.txt
-report_resources > reosurces_PPARCH.txt
-source scripts/createnet_PPARCH.tcl
-#@ # -- Starting source scripts/createnet_PPARCH.tcl
-
-#@ ungroup -all -flatten
-#@ change_names -hierarchy -rules verilog
-#@ write_sdf ../netlist/fpnew_top_fmax_PPARCH.sdf
-#@ write -f verilog -hierarchy -output ../netlist/fpnew_top_fmax_PPARCH.v
-#@ # -- End source scripts/createnet_PPARCH.tcl
-
-quit

@@ -327,7 +327,7 @@ module fpnew_fma #(
     .x (mantissa_a),
     .a (mantissa_b),
     .y (product)
-  );
+  )
 
   // Product is placed into a 3p+4 bit wide vector, padded with 2 bits for round and sticky:
   // | 000...000 | product | RS |
