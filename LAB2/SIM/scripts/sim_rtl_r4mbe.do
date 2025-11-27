@@ -7,7 +7,7 @@ vlog -work ./work ../cvfpu_lite/src/rr_arb_tree.sv
 vlog -work ./work ../cvfpu_lite/src/fpnew_pkg.sv
 vlog -work ./work ../cvfpu_lite/src/fpnew_classifier.sv
 vlog -work ./work ../cvfpu_lite/src/fpnew_rounding.sv
-vlog -work ./work ../cvfpu_lite/src/fpnew_fma_r4mbe.sv
+vlog -work ./work ../cvfpu_lite/src/fpnew_fma.sv
 vlog -work ./work ../cvfpu_lite/src/fpnew_opgroup_fmt_slice.sv
 vlog -work ./work ../cvfpu_lite/src/fpnew_opgroup_block.sv
 vlog -work ./work ../cvfpu_lite/src/fpnew_top.sv
