@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version S-2021.06-SP4 for linux64 -- Nov 23, 2021
-#@ # Date:   Thu Nov 27 21:23:44 2025
+#@ # Date:   Thu Nov 27 23:14:40 2025
 #@ # Run by: isa31_2025_2026@isaserver
 #@ 
 
@@ -44406,7 +44406,6 @@ source scripts/setup.tcl
 #@ set synthetic_library [list "dw_foundation.sldb" ]
 #@ # -- End source scripts/setup.tcl
 
-source scripts/reading_source_files_
 source scripts/reading_source_files_r4mbe.tcl
 #@ # -- Starting source scripts/reading_source_files_r4mbe.tcl
 
@@ -44429,20 +44428,10 @@ source scripts/applying_constraints_r4mbe_ultra.tcl
 #@ # -- End source scripts/applying_constraints_r4mbe_ultra.tcl
 
 compile_ultra
-report_timing
-report_timing > report/fmax_r4mbe_met.txt
-report_timing > report/area_r4mbe_fmax.txt
-report_area > report/area_r4mbe_fmax.txt
-source scripts/createNet_r4mbe_fmax.tcl
-#@ # -- Starting source scripts/createNet_r4mbe_fmax.tcl
-
-#@ ungroup -all -flatten
-#@ change_names -hierarchy -rules verilog
-#@ write_sdf ../netlist/fpnew_top_r4mbe_fmax.sdf
-#@ write -f verilog -hierarchy -output ../netlist/fpnew_top_r4mbe_fmax.v
-#@ write_sdc ../netlist/fpnew_top_r4mbe_fmax.sdc
-#@ # -- End source scripts/createNet_r4mbe_fmax.tcl
-
-man UID-282
-man UID-228
+change_selection [get_cells fpnew_top]
+gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting schematic:background_color -value black
+gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting zoomFitFactor -value 0.0
+change_selection [get_cells fpnew_top]
+gui_zoom -window [gui_get_current_window -view] -full
+change_selection [get_cells fpnew_top]
 quit

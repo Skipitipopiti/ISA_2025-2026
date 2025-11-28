@@ -1,4 +1,4 @@
-vcom -work ./work ../cvfpu_lite/tb/clk_gen.vhd
+vcom -work ./work ../cvfpu_lite/tb/clk_gen_ultra.vhd
 vcom -work ./work ../cvfpu_lite/tb/data_gen16.vhd
 
 vlog -work ./work ../netlist/fpnew_top_fmax_ultra.v
