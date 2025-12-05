@@ -1,12 +1,13 @@
-// combinazioni 1000xxxx, soliti corrotti: 142 e 143
-
-`timescale 1ns/1ps
+`timescale 1ps
 
 module tb_r4mbe;
 
     logic [7:0]  x_tb;
     logic [7:0]  a_tb;
     logic [15:0] y_tb;
+
+    logic [15:0] expected;
+    int err_count = 0;
 
     // DUT
     r4mbe uut(
@@ -16,33 +17,41 @@ module tb_r4mbe;
     );
 
     initial begin
-        logic [7:0] a_val = 8'd3;
-        logic [15:0] expected;
 
+        // 1) Test con a fisso = 5
+        a_tb = 8'd5;
 
-        // ------- combinazioni 1000xxx0 -------
-        x_tb = 8'b10000000; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000010; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000100; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000110; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001000; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001010; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001100; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001110; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
+        for (int x = 0; x < 256; x++) begin
+            x_tb = x;
+            #20;
+            expected = x_tb * a_tb;
+            if (y_tb !== expected) begin
+                $display("ERR (a fisso) x=%0d a=%0d  y=%0d expected=%0d",
+                         x_tb, a_tb, y_tb, expected);
+                err_count++;
+            end
+        end
 
+        // 2) Test con x fisso = 5
+        x_tb = 8'd5;
 
-        // ------- combinazioni 1000xxx1 -------
-        x_tb = 8'b10000001; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000011; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000101; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10000111; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001001; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001011; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001101; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
-        x_tb = 8'b10001111; a_tb = a_val; #50; expected = x_tb * a_tb; if (y_tb !== expected) $display("ERR %b", x_tb);
+        for (int a = 0; a < 256; a++) begin
+            a_tb = a;
+            #20;
+            expected = x_tb * a_tb;
+            if (y_tb !== expected) begin
+                $display("ERR (x fisso) x=%0d a=%0d  y=%0d expected=%0d",
+                         x_tb, a_tb, y_tb, expected);
+                err_count++;
+            end
+        end
 
+        // 3) Esito finale
+        if (err_count == 0)
+            $display("Test cleared with no errors");
+        else
+            $display("test cleared with %0d errors", err_count);
 
-        $display("Test completato");
         $stop;
     end
 
