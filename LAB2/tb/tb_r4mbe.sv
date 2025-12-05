@@ -32,7 +32,7 @@ module tb_r4mbe;
             end
         end
 
-        // 2) Test con x fisso = 5
+        // Test con x fisso = 5
         x_tb = 8'd5;
 
         for (int a = 0; a < 256; a++) begin
@@ -46,7 +46,7 @@ module tb_r4mbe;
             end
         end
 
-        // 3) Esito finale
+        // Esito finale
         if (err_count == 0)
             $display("Test cleared with no errors");
         else
